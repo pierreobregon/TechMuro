@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html><head>
+<meta charset="utf-8">
+<title>:: Muro Tecnol&oacute;gico ::</title>
+<meta http-equiv="X-UA-Compatible" content="IE=8" />
+<link href="css/core.css" rel="stylesheet" type="text/css">
+
+<script src="js/URL_DD_roundies.js"></script>
+
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/grid.locale-es.js"></script>
+<script type="text/javascript" src="js/jquery.jqGrid.min.js" ></script>
+
+<!--<script type="text/javascript" src="js/jquery-1.3.2.js"></script>
+<script type="text/javascript" src="js/jquery.filestyle.pack.js" ></script>-->
+
+<!-- Select -->
+<script type="text/javascript" src="js/bootstrap-3.0.3.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-multiselect.js"></script>
+<script type="text/javascript" src="js/prettify.js"></script>
+
+<script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="js/portBox.slimscroll.min.js"></script>
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+<div id="container">
+
+	<!-- Header -->
+            <a href="#" data-display="empty" class="button">Empty demo</a>
+            
+                <!-- Grilla -->
+
+                <div id="empty" class="portBox">
+                <div id="title-header-popup">Agregar Contrato</div>
+                	<div class="box">
+                        <form method="post">
+                            <ul id="body-popup">
+                                <li>Contrato:</li>
+                                <li id="right-li"><input name="" type="text" class="input-popup"></li>
+                                <li>Gasto notarial:</li>
+                                <li id="right-li"><input name="" type="text" class="input-popup"></li>
+                            </ul>
+                            <ul id="button-popup">
+                            	<li><input type="submit" value="Guardar" class="button-image-complete-gren"></li>
+                            	<li><input type="button" value="Cancelar" class="button-image-complete"><li>
+                            </ul>
+                        </form>
+                    </div>
+                    
+                    <!-- Grilla -->
+                    
+                    <!-- Find Grilla -->
+                    
+                </div>
+                
+            </div>
+            <!-- The JavaScript -->
+            
+			<!--<script language="javascript" type="text/javascript">
+                $(function() {
+                     $(".input-file").filestyle({ 
+                         image: "images/input-file.png",
+                         imageheight:27,
+                         imagewidth: 84,
+                         width: 160
+                     });
+                });
+            </script>-->
+                        
+            <script type="text/javascript">
+			    $(document).ready(function() {
+			        window.prettyPrint() && prettyPrint();
+                    
+                    $('#oficinas').multiselect({
+                        includeSelectAllOption: true,
+			        	enableCaseInsensitiveFiltering: true
+                    });
+			    });
+			</script>
+            
+            	
+                
+                
+</div>
+</body>
+</html>

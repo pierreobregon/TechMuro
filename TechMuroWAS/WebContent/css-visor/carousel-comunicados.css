@@ -1,0 +1,128 @@
+.scroll-text {
+  width: 728px;
+  height:148px;
+  overflow: hidden;
+  margin-top:10px;
+}
+
+.scroll-text ul {
+  	overflow: hidden;
+	margin:0 0 0 30px;
+	padding:0;
+	list-style:none;
+	display:block;
+}
+
+.scroll-text ul li {
+	float:left;
+}
+
+.scroll-text ul li a {
+	width:655px;
+	height:29px;
+	background:url(../images-visor/list-icon-muro.png) no-repeat left center;
+	font-family:"Stag Sans Light", Arial, sans-serif;
+	color:#333;
+	font-size:17px;
+	padding:0 10px 0 30px;
+	line-height:29px;
+	text-decoration:none;
+	display:block;
+	}
+	
+.scroll-text ul li a:hover {
+	line-height:29px;
+	color:#0065b7;
+	font-weight:bold;
+	}
+	
+.scroll-text ul li a.clear-right {
+	margin-right:0;
+	}	
+	
+.clear-right {
+	margin-right:0;
+	float:right;
+	}	
+	
+.scroll-text ul li a p {
+	float:left;
+	}	
+	
+.scroll-text ul li a span {
+	float:right;
+	}		
+	
+.scroll-img {
+  border: 1px solid red;
+  width: 680px;
+  height: 142px;
+  overflow: hidden;
+  font-size: 0;
+}
+.scroll-img ul {
+  width: 700px;
+  height: 600px;
+  margin: 0;
+}
+.scroll-img ul li {
+  display: inline-block;
+  margin: 10px 0 10px 10px;
+}
+#demo4.scroll-img ul,
+#demo5.scroll-img ul {
+  width: 1500px;
+}
+#demo5-btn {
+  width: 680px;
+  padding-top: 10px;
+}
+#demo6 {
+  width: 412px;
+}
+#demo6-queue {
+  width: 680px;
+}
+#demo6 p, #demo6-queue p {
+  width: 124px;
+  height: 124px;
+  background-color: lightgray;
+  font-family: 'Amaranth', sans-serif;
+  font-size: 82px;
+  text-align: center;
+  display: table-cell;
+  vertical-align:middle;
+}
+
+/******************************************/
+/***		CSS para movil 1360px		***/
+/******************************************/
+@media only screen and (max-width:1360px){
+	.scroll-text {
+		width:558px;
+		height:98px;
+		margin-top:13px;
+	}
+	
+	.scroll-text ul {
+		width:558px;
+		margin:0 0 0 20px;
+		}	
+		
+	.scroll-text ul li a {
+		width:480px;
+		height:20px;
+		font-size:15px;
+		margin-right:20px;
+		padding:0 10px 0 30px;
+		line-height:20px;
+		}	
+		
+	.scroll-text ul li a:hover {
+		line-height:20px;
+		font-weight:normal;
+		}
+		
+	.scroll-text ul li a.clear-right {
+		margin-right:0;
+		}

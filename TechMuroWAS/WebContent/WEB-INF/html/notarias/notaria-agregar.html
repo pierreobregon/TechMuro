@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<html><head>
+<meta charset="utf-8">
+<title>:: Muro Tecnol&oacute;gico ::</title>
+<meta http-equiv="X-UA-Compatible" content="IE=8" />
+<link href="../../../css/core.css" rel="stylesheet" type="text/css">
+
+<script src="../../../js/URL_DD_roundies.js"></script>
+
+<script type="text/javascript" src="../../../js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="../../../js/grid.locale-es.js"></script>
+<script type="text/javascript" src="../../../js/jquery.jqGrid.min.js" ></script>
+
+<!--<script type="text/javascript" src="js/jquery-1.3.2.js"></script>
+<script type="text/javascript" src="js/jquery.filestyle.pack.js" ></script>-->
+
+<!-- Select -->
+<script type="text/javascript" src="../../../js/bootstrap-3.0.3.min.js"></script>
+<script type="text/javascript" src="../../../js/bootstrap-multiselect.js"></script>
+<script type="text/javascript" src="../../../js/prettify.js"></script>
+
+<script src="../../../js/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="../../../js/portBox.slimscroll.min.js"></script>
+
+<script>
+
+		$(document).ready(function () {
+		
+		var mydata = [
+				{contrato:"Pr&eacute;stamo Hipotecario para vivienda Pr&eacute;stamo Hipotecario para vivienda Pr&eacute;stamo Hipotecario para vivienda ",gasto:"Hasta S/. 600"},
+				{contrato:"Pr&eacute;stamo Hipotecario Mi Vivienda",gasto:"Hasta S/. 350"},
+				{contrato:"Hipoteca",gasto:"Hasta S/. 600"},
+				{contrato:"Pr&eacute;stamo Hipotecario para vivienda",gasto:"Hasta S/. 600"},
+				{contrato:"Pr&eacute;stamo Hipotecario Mi Vivienda",gasto:"Hasta S/. 350"},
+				{contrato:"Hipoteca",gasto:"Hasta S/. 600"},
+				{contrato:"Pr&eacute;stamo Hipotecario para vivienda",gasto:"Hasta S/. 600"},
+				{contrato:"Pr&eacute;stamo Hipotecario Mi Vivienda",gasto:"Hasta S/. 350"},
+				{contrato:"Pr&eacute;stamo Hipotecario para vivienda",gasto:"Hasta S/. 600"},
+				{contrato:"Pr&eacute;stamo Hipotecario Mi Vivienda",gasto:"Hasta S/. 350"},
+				{contrato:"Hipoteca",gasto:"Hasta S/. 600"}
+			]
+		,
+			grid = $("#listDetalleNotaria");
+
+            grid.jqGrid({
+                datatype:'local',
+                data: mydata,
+               	colNames: ["Contrato", "Gasto", "Editar", "Eliminar"],
+				colModel:[ 
+					{name:'contrato',index:'contrato', width:280, sorttype:"int", align:"left"},
+					{name:'gasto',index:'gasto', width:120, sorttype:"int", align:"center"}, 
+					{name:'editar',index:'total', width:72,align:"center", sorttype:"date"},
+					{name:'eliminar',index:'total', width:72,align:"center",sorttype:"float"},
+					/*{name:'accion',index:'note', width:90, sortable:false}*/
+				],
+				
+                rowNum:5,
+                rowList:[5,10,20],
+                pager: '#pager',
+                gridview:true,
+                rownumbers:false,
+                sortname: 'id',
+                viewrecords: false,
+                sortorder: 'desc',
+				
+				width: 520,
+                height: '100%',
+				
+				gridComplete: function(){
+					var ids = jQuery("#listDetalleNotaria").jqGrid('getDataIDs');
+					for(var i=0;i < ids.length;i++){
+						var cl = ids[i];
+						be = "<div id='icon-edit'\"></div>";
+						se = "<div id='icon-eliminar'\"></div>";
+						de = "<div id='afiches'\"></div>";
+						/*ge = "<div id='check'\"></div>"; */
+
+						jQuery("#listDetalleNotaria").jqGrid('setRowData',ids[i],{editar:be});
+						jQuery("#listDetalleNotaria").jqGrid('setRowData',ids[i],{eliminar:se});
+						jQuery("#listDetalleNotaria").jqGrid('setRowData',ids[i],{afiches:de});
+						/*jQuery("#list").jqGrid('setRowData',ids[i],{miniatura:ge});*/
+						
+					}
+				
+				}
+				
+				
+            });
+        });
+	
+</script>
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+<a href="#" data-display="empty" class="button">Empty demo</a>
+<div id="container">
+	<!-- Header -->
+            
+            
+                <!-- Grilla -->
+
+                <div id="empty" class="portBox">
+					<div id="title-header-popup">Agregar Notar&iacute;a</div>
+                	<div class="box-2">
+                        <form method="post" class="padding">
+                            <ul id="body-popup-2">
+                                <li>Nombre:</li>
+                                <li id="right-li"><input name="" type="text" class="input-popup-2"></li>
+                                <li>Direcci&oacute;n:</li>
+                                <li id="right-li"><input name="" type="text" class="input-popup-2"></li>
+                                <li>Tel&eacute;fono:</li>
+                                <li id="right-li"><input name="" type="text" class="input-popup-2"></li>
+                                <li>P&aacute;gina Web:</li>
+                                <li id="right-li"><input name="" type="text" class="input-popup-2"></li>
+                                <li>Email:</li>
+                                <li id="right-li"><input name="" type="text" class="input-popup-2"></li>
+                                <li>Plaza:</li>
+                                <li id="right-li">
+                                    <select id="oficinas">
+                                        <option value="0">-- Seleccionar Plaza --</option>
+                                        <option value="0567">0567 - C.C. Camino Real</option>
+                                        <option value="0998">0998 - Alcazar</option>
+                                        <option value="0877">0877 - Centro</option>
+                                        <option value="0543">0543 - Huancayo</option>
+                                        <option value="0998">0998 - Alcazar</option>
+                                        <option value="0877">0877 - Centro</option>
+                                        <option value="0543">0543 - Huancayo</option>
+                                        <option value="0998">0998 - Alcazar</option>
+                                        <option value="0877">0877 - Centro</option>
+                                        <option value="0543">0543 - Huancayo</option>
+                                        <option value="0998">0998 - Alcazar</option>
+                                        <option value="0877">0877 - Centro</option>
+                                        <option value="0543">0543 - Huancayo</option>
+                                        <option value="0998">0998 - Alcazar</option>
+                                        <option value="0877">0877 - Centro</option>
+                                        <option value="0543">0543 - Huancayo</option>
+                                    </select>
+                              	</li>
+								
+                                    <ul id="block-grid-right">
+                                        <li>
+                                            <a href="#" id="container-button-add"><div id="button-add-left"></div><div id="button-add-center"><span class="icon-plus-button">Agregar Contrato</span></div><div id="button-add-right"></div></a>
+                                        </li>
+                                    </ul>
+                                    <div id="container-list">
+                                        <table id="listDetalleNotaria"></table>
+                                        <div id="pager"></div>	
+                                    </div>
+                                
+                                <li class="li-bottom">Fecha de Creaci&oacute;n:</li>
+                                <li id="right-li" class="li-bottom">09/12/2011</li>
+                                <li>Fecha de Actualizaci&oacute;n:</li>
+                                <li id="right-li">28/11/2012</li>
+                            </ul>
+                            <ul id="button-popup">
+                            	<li><input type="submit" value="Guardar" class="button-image-complete-gren"></li>
+                            	<li><input type="button" value="Cancelar" class="button-image-complete"><li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+            
+            <script type="text/javascript">
+			    $(document).ready(function() {
+			        window.prettyPrint() && prettyPrint();
+                    
+                    $('#oficinas').multiselect({
+                        includeSelectAllOption: true,
+			        	enableCaseInsensitiveFiltering: true
+                    });
+			    });
+			</script>
+			
+</div>
+</body>
+</html>

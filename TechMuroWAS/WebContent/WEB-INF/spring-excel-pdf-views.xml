@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+	<bean id="reporteTarifarioCompletoXLS" class="pe.conadis.tradoc.report.ReporteTarifarioCompletoExcel"/>
+	<bean id="reporteCapituloXLS" class="pe.conadis.tradoc.report.ReporteCapituloExcel"/>
+	<bean id="reporteProductoXLS" class="pe.conadis.tradoc.report.ReporteProductoExcel"/>
+
+	<bean id="reporteTarifarioCompletoPDF" class="pe.conadis.tradoc.report.ReporteTarifarioCompletoPDF2"/>
+	<bean id="reporteCapituloPDF" class="pe.conadis.tradoc.report.ReporteCapituloPDF"/>
+	<bean id="reporteProductoPDF" class="pe.conadis.tradoc.report.ReporteProductoPDF"/>
+
+</beans>

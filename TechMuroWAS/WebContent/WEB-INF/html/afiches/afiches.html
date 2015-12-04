@@ -1,0 +1,225 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>:: Muro Tecnol&oacute;gico ::</title>
+<meta http-equiv="X-UA-Compatible" content="IE=8" />
+<link href="css/core.css" rel="stylesheet" type="text/css">
+
+<script src="js/URL_DD_roundies.js"></script>
+
+<!-- Bordes para IE7
+	<script>
+        DD_roundies.addRule('input', '3px');
+        DD_roundies.addRule('#container-search', '5px');
+    </script>  
+Fin Bordes para IE7 -->
+
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/grid.locale-es.js"></script>
+<script type="text/javascript" src="js/jquery.jqGrid.min.js" ></script>
+
+<!--<script type="text/javascript" src="js/popup/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/popup/modal-window.min.js"></script>-->
+
+<script>
+
+
+
+$(document).ready(function () {
+
+var mydata = [
+		{nro:"1",imagen:"2013000001",oficina:"Todas",descripcion:"Necesitas Informaci&oacute;n?",miniatura:""},
+		{nro:"2",imagen:"2013000001",oficina:"0481",descripcion:"Atendemos sus reclamos",miniatura:"<div id='check'\"></div>"},
+		{nro:"3",imagen:"2013000001",oficina:"0481",descripcion:"Super Intendencia",miniatura:"<div id='check'\"></div>"},
+		{nro:"4",imagen:"2013000001",oficina:"0481",descripcion:"Consulta y Reclamos",miniatura:"<div id='check'\"></div>"},
+		{nro:"5",imagen:"2013000001",oficina:"0481",descripcion:"Atendemos sus reclamos",miniatura:"<div id='check'\"></div>"},
+		{nro:"6",imagen:"2013000001",oficina:"0481",descripcion:"Otros",miniatura:""},
+		{nro:"7",imagen:"2013000001",oficina:"0481",descripcion:"Atendemos sus reclamos",miniatura:""},
+		{nro:"8",imagen:"2013000001",oficina:"0481",descripcion:"Super Intendencia",miniatura:"<div id='check'\"></div>"},
+		{nro:"9",imagen:"2013000001",oficina:"0481",descripcion:"Consulta y Reclamos",miniatura:""},
+		{nro:"10",imagen:"2013000001",oficina:"0481",descripcion:"Atendemos sus reclamos",miniatura:""},
+		{nro:"11",imagen:"2013000001",oficina:"0481",descripcion:"Otros",miniatura:""},
+		{nro:"12",imagen:"2013000001",oficina:"0481",descripcion:"Atendemos sus reclamos",miniatura:""},
+		{nro:"13",imagen:"2013000001",oficina:"0481",descripcion:"Super Intendencia",miniatura:""},
+		{nro:"14",imagen:"2013000001",oficina:"0481",descripcion:"Consulta y Reclamos",miniatura:""},
+		{nro:"15",imagen:"2013000001",oficina:"0481",descripcion:"Atendemos sus reclamos",miniatura:""},
+		{nro:"16",imagen:"2013000001",oficina:"0481",descripcion:"Otros",miniatura:""},
+		{nro:"17",imagen:"2013000001",oficina:"0481",descripcion:"Atendemos sus reclamos",miniatura:""},
+		{nro:"18",imagen:"2013000001",oficina:"0481",descripcion:"Super Intendencia",miniatura:""},
+		{nro:"19",imagen:"2013000001",oficina:"0481",descripcion:"Consulta y Reclamos",miniatura:""},
+		{nro:"20",imagen:"2013000001",oficina:"0481",descripcion:"Atendemos sus reclamos",miniatura:""},
+		{nro:"21",imagen:"2013000001",oficina:"0481",descripcion:"Otros",miniatura:""},
+		{nro:"22",imagen:"2013000001",oficina:"0481",descripcion:"Atendemos sus reclamos",miniatura:""},
+		{nro:"23",imagen:"2013000001",oficina:"0481",descripcion:"Super Intendencia",miniatura:""},
+		{nro:"24",imagen:"2013000001",oficina:"0481",descripcion:"Consulta y Reclamos",miniatura:""},
+		{nro:"25",imagen:"2013000001",oficina:"0481",descripcion:"Atendemos sus reclamos",miniatura:""},
+		
+	]
+	
+		,
+			grid = $("#list");
+
+            grid.jqGrid({
+                datatype:'local',
+                data: mydata,
+               	colNames: ["N°", "Imagen", "Oficina", "Descripci&oacute;n", "Miniatura", "Editar", "Eliminar"],
+				colModel:[ 
+					{name:'nro',index:'nro', width:54, sorttype:"int", align:"center"},
+					{name:'afiches',index:'invdate', width:84, sorttype:"int", align:"center"}, 
+					{name:'oficina',index:'name', width:84, align:"center"},
+					{name:'descripcion',index:'name', width:216, align:"center"},
+					{name:'miniatura',index:'tax', width:79, align:"center",sorttype:"float"},
+					{name:'editar',index:'total', width:72,align:"center", sorttype:"date"},
+					{name:'eliminar',index:'total', width:72,align:"center",sorttype:"float"},
+					/*{name:'accion',index:'note', width:90, sortable:false}*/
+				],
+				
+                rowNum:10,
+                rowList:[5,10,20],
+                pager: '#pager',
+                gridview:true,
+                rownumbers:false,
+                sortname: 'id',
+                viewrecords: false,
+                sortorder: 'desc',
+				
+				width: 672,
+                height: '100%',
+				
+				gridComplete: function(){
+					var ids = jQuery("#list").jqGrid('getDataIDs');
+					for(var i=0;i < ids.length;i++){
+						var cl = ids[i];
+						be = "<div id='icon-edit'\"></div>";
+						se = "<div id='icon-eliminar'\"></div>";
+						de = "<div id='afiches'\"></div>";
+						/*ge = "<div id='check'\"></div>"; */
+
+						jQuery("#list").jqGrid('setRowData',ids[i],{editar:be});
+						jQuery("#list").jqGrid('setRowData',ids[i],{eliminar:se});
+						jQuery("#list").jqGrid('setRowData',ids[i],{afiches:de});
+						/*jQuery("#list").jqGrid('setRowData',ids[i],{miniatura:ge});*/
+						
+					}
+				
+				}
+				
+				
+            });
+        });
+	
+</script>
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+<div id="container">
+
+	<!-- Header -->
+	<header id="header">
+    	<div id="logo"></div>
+                
+        <div class="table-header-title">
+            <div class="tr-header-title">
+                <div class="td-header-title">
+                    <div id="icon-title-header"></div>
+                    <h2>Muro Tecnol&oacute;gico</h2>
+                </div>
+                <div class="td-header-title">
+                    <ul id="block-header-right">
+                        <li>
+                            <a href="#" id="container-button-close"><div id="button-close-left"></div><div id="button-close-center">Salir</div><div id="button-close-right"></div></a>
+                        </li>
+                        <li>
+                            <a href="#" id="container-button-user"><div id="button-user-left"></div><div id="button-user-center">Usuario : Jorge Lopez Alvarado</div><div id="button-user-right"></div></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+
+	<!-- Main -->
+	<nav id="nav-main">
+        <ul id="main-primary">
+            <li><a href="afiches.html" class="active-main"><div class="afiche-icon"></div>Afiches</a></li>
+            <li><a href="#"><div class="tarifario-icon"></div>Tarifario</a>
+            	<ul>
+                	<li><a href="#"><div class="producto-icon"></div>Producto</a></li>
+                    <li><a href="#"><div class="capitulo-icon"></div>Cap&iacute;tulo</a></li>
+                    <li><a href="#"><div class="subcapitulo-icon"></div>Sub Cap&iacute;tulo</a></li>
+                    <li><a href="#"><div class="rubros-icon"></div>Rubros</a></li>
+                    <li><a href="#"><div class="categorias-icon"></div>Categorias</a></li>
+                    <li><a href="#"><div class="transacciones-icon"></div>Transacciones</a></li>
+                    <li><a href="#"><div class="avisos-icon"></div>Avisos Importantes</a></li>
+                </ul>
+            </li>    
+            <li><a href="notarias.html"><div class="notarias-icon"></div>Notarias</a></li>
+            <li><a href="#"><div class="comunicados-icon"></div>Comunicados</a></li>
+            <li><a href="#"><div class="variablesgen-icon"></div>Variables Generales</a>
+            	<ul>
+                	<li><a href="#"><div class="variables-icon"></div>Variables</a></li>
+                	<li><a href="#"><div class="etiquetas-icon"></div>Etiquetas</a></li>
+                </ul>
+            </li>    
+            <li><a href="#"><div class="oficinas-icon"></div>Oficinas</a></li>
+            <li><a href="#"><div class="reportes-icon"></div>Reportes</a></li>
+            <li><a href="#"><div class="perfiles-icon"></div>Perfiles de Usuario</a></li>            
+        </ul>
+	</nav>
+    
+    <!-- Body -->
+    <section id="body-section">
+    	<div id="block-grid">
+            <div id="line-body-sup"></div>
+            <div id="back-title">
+                <h1>Afiches</h1>
+            </div>
+            <div id="container-search">
+            	<form>
+            	<ul>
+                	<li><h2>B&uacute;squeda :</h2></li>
+                    <li><input name="" type="text" class="input-border"></li>
+                    <li><input type="submit" value="Buscar" class="button-image-complete"></li>
+                </ul>
+                </form>
+            </div>
+            
+            <div id="container-grid">    
+                <div class="table-grid">
+                    <div class="tr-grid">
+                        <div class="td-grid">
+                            <p>Resultados de la b&uacute;squeda...</p>
+                        </div>
+                        <div class="td-grid">
+                            <ul id="block-grid-right">
+                                <li>
+                                    <a href="#" id="container-button-add"><div id="button-add-left"></div><div id="button-add-center"><span class="icon-plus-button">Agregar Afiche</span></div><div id="button-add-right"></div></a>
+                                    <!--<a href="#" id="container-button-add"><div class="icon-plus-button"></div>Agregar Afiche</a>-->
+                                    
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Grilla -->
+                <table id="list"></table>
+                <div id="pager"></div>
+            <!-- Find Grilla -->
+            </div>
+                
+        </div>
+    </section>
+    
+</div>
+
+</body>
+</html>

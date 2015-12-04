@@ -1,0 +1,290 @@
+@charset "utf-8";
+/* CSS Document */
+
+#nav-main {
+	width:280px;
+	min-height:848px;
+	background:#red;
+	display:block;
+	float:left;
+	}
+	
+#main-primary {
+	margin:0;
+	padding:0;
+	list-style:none;
+	border-bottom:1px solid #095ca3;
+	}
+
+/*#main li {
+	float:left;
+	}	*/
+	
+#main-primary li a {
+	height:48px;
+	background:#07508f;
+	font-family:"Stag Sans Light", Arial, sans-serif;
+	font-size:13px;
+	color:#fff;
+	line-height:50px;
+	*line-height:48px;
+	padding-left:40px; /*padding-left:60px;*/
+	display:block;
+	text-decoration:none;
+	border-bottom:1px solid #094477;
+	border-top:1px solid #095ca3;
+	position:relative;
+	} 	
+	
+#main-primary .active-main, 
+#main-primary > li > a:hover {
+	font-family:"Stag Sans Book", Arial, sans-serif;
+	background:url(../images/main-option-hover.jpg) repeat-x;
+	border-top:1px solid #0076c1;
+	}
+	
+#main-primary > li.no-hover > a:hover {
+	font-family:"Stag Sans Light", Arial, sans-serif;
+	border-top:1px solid #095ca3;
+	background:none;
+	}	
+	
+/************* Active ****************/	
+#main-primary .active-main > .afiche-icon,
+#main-primary .active-main > .notarias-icon {
+	background:url(../images/sprit-icons-main-sup-hover.png) no-repeat;
+	}	
+	
+#main-primary .active-main > .notarias-icon {background-position:-46px;}		
+	
+	
+/************ Fin Active *************/	
+	
+/*#main li a {
+    -webkit-transition:background 1s;
+    -moz-transition:background 1s;
+    -o-transition:background 1s;
+    -ms-transition:background 1s;
+    transition:background 1s;    
+}*/
+
+#main-primary li a 
+.afiche-icon, .tarifario-icon, .notarias-icon, .comunicados-icon,
+.variablesgen-icon, .oficinas-icon, .reportes-icon, .perfiles-icon	{	
+	width:23px;
+	height:23px;
+	background:url(../images/sprit-icons-main-sup.png) no-repeat;
+	display:block;
+	position:absolute;
+	top:13px;
+	left:10px;  /*left:30px;*/
+	}
+	
+.tarifario-icon	{background-position:-23px;}
+.notarias-icon	{background-position:-46px;}	
+.comunicados-icon{background-position:-69px;}
+.variablesgen-icon	{background-position:-92px;}
+.oficinas-icon	{background-position:-115px;}
+.reportes-icon	{background-position:-138px;}
+.perfiles-icon	{background-position:-161px;}
+
+#main-primary li a:hover .afiche-icon {background:url(../images/sprit-icons-main-sup-hover.png) no-repeat;}
+/* #main-primary li a:hover .tarifario-icon {background:url(../images/sprit-icons-main-sup-hover.png) no-repeat -23px;}	 */
+#main-primary li a:hover .notarias-icon {background:url(../images/sprit-icons-main-sup-hover.png) no-repeat -46px;}
+#main-primary li a:hover .comunicados-icon {background:url(../images/sprit-icons-main-sup-hover.png) no-repeat -69px;}
+/* #main-primary li a:hover .variablesgen-icon {background:url(../images/sprit-icons-main-sup-hover.png) no-repeat -92px;} */
+#main-primary li a:hover .oficinas-icon {background:url(../images/sprit-icons-main-sup-hover.png) no-repeat -115px;}
+#main-primary li a:hover .reportes-icon {background:url(../images/sprit-icons-main-sup-hover.png) no-repeat -138px;}
+#main-primary li a:hover .perfiles-icon	{background:url(../images/sprit-icons-main-sup-hover.png) no-repeat -161px;}
+
+#main-primary li ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+	}	
+	
+/*#main li li {
+	float:left;
+	}	*/
+	
+#main-primary li li a {
+	height:48px;
+	background:#bee7fb;
+	font-family:"Stag Sans Light", Arial, sans-serif;
+	font-size:13px;
+	color:#000;
+	line-height:52px;
+	*line-height:48px;
+	padding-left:45px;  /*padding-left:80px;*/
+	display:block;
+	text-decoration:none;
+	border-top:1px solid #d9f2ff;
+	border-bottom:1px solid #89d5fa;
+	} 		
+	
+#main-primary li li a:hover {
+	background:#8ad0f3;
+	}	
+	
+#main-primary li li a 
+.producto-icon, .capitulo-icon, .subcapitulo-icon, .rubros-icon,
+.categorias-icon, .transacciones-icon, .avisos-icon,.variables-icon, .etiquetas-icon {	
+	width:23px;
+	height:23px;
+	background:url(../images/sprit-icons-main-inf.png) no-repeat;
+	display:block;
+	position:absolute;
+	top:10px;
+	left:10px;  /*left:10px;*/
+	}	
+	
+.capitulo-icon	{background-position:-23px;}	
+.subcapitulo-icon{background-position:-46px;}
+.rubros-icon	{background-position:-69px;}
+.categorias-icon{background-position:-92px;}
+.transacciones-icon{background-position:-115px;}
+.avisos-icon	{background-position:-138px;}
+.variables-icon	{background-position:-161px;}
+.etiquetas-icon {background-position:-184px;}
+
+#main-primary li li a:hover .producto-icon {background:url(../images/sprit-icons-main-inf-hover.png) no-repeat;}
+#main-primary li li a:hover .capitulo-icon {background:url(../images/sprit-icons-main-inf-hover.png) no-repeat -23px;}	
+#main-primary li li a:hover .subcapitulo-icon {background:url(../images/sprit-icons-main-inf-hover.png) no-repeat -46px;}
+#main-primary li li a:hover .rubros-icon {background:url(../images/sprit-icons-main-inf-hover.png) no-repeat -69px;}
+#main-primary li li a:hover .categorias-icon {background:url(../images/sprit-icons-main-inf-hover.png) no-repeat -92px;}
+#main-primary li li a:hover .transacciones-icon {background:url(../images/sprit-icons-main-inf-hover.png) no-repeat -115px;}
+#main-primary li li a:hover .avisos-icon {background:url(../images/sprit-icons-main-inf-hover.png) no-repeat -138px;}
+#main-primary li li a:hover .variables-icon	{background:url(../images/sprit-icons-main-inf-hover.png) no-repeat -161px;}
+#main-primary li li a:hover .etiquetas-icon	{background:url(../images/sprit-icons-main-inf-hover.png) no-repeat -184px;}
+
+
+#main-primary div a {
+	height:48px;
+	background:#07508f;
+	font-family:"Stag Sans Light", Arial, sans-serif;
+	font-size:13px;
+	color:#fff;
+	line-height:50px;
+	*line-height:48px;
+	padding-left:40px; /*padding-left:60px;*/
+	display:block;
+	text-decoration:none;
+	border-bottom:1px solid #094477;
+	border-top:1px solid #095ca3;
+	position:relative;
+}
+
+#main-primary > div > a:hover{
+	font-family:"Stag Sans Book", Arial, sans-serif;
+	background:url(../images/main-option-hover.jpg) repeat-x;
+	border-top:1px solid #0076c1;
+	}
+#main-primary > div.no-hover > a:hover {
+	font-family:"Stag Sans Light", Arial, sans-serif;
+	border-top:1px solid #095ca3;
+	background:none;
+	}
+
+
+#main-primary div a 
+.afiche-icon, .tarifario-icon, .notarias-icon, .comunicados-icon,
+.variablesgen-icon, .oficinas-icon, .reportes-icon, .perfiles-icon {
+	width:23px;
+	height:23px;
+	background:url(../images/sprit-icons-main-sup.png) no-repeat;
+	display:block;
+	position:absolute;
+	top:13px;
+	left:10px; /*left:30px;*/
+	}
+
+#main-primary div div a 
+.afiche-icon-opc, .tarifario-icon-opc, .notarias-icon-opc, .comunicados-icon-opc,
+.variablesgen-icon-opc, .oficinas-icon-opc, .reportes-icon-opc, .perfiles-icon-opc {
+	width:23px;
+	height:23px;
+	background:url(../images/sprit-icons-main-sup-hover.png) no-repeat;
+	display:block;
+	position:absolute;
+	top:13px;
+	left:15px;/*left:50px;*/
+	}
+.spanCollapseMenu{
+	width:23px;height:23px;display:block;position:absolute !important;top:13px !important;right:30px;background: transparent !important;
+}
+
+#main-primary div a:hover .afiche-icon {background:url(../images/sprit-icons-main-sup-hover.png) no-repeat;}
+#main-primary div a:hover .notarias-icon {background:url(../images/sprit-icons-main-sup-hover.png) no-repeat -46px;}
+#main-primary div a:hover .comunicados-icon {background:url(../images/sprit-icons-main-sup-hover.png) no-repeat -69px;}
+#main-primary div a:hover .oficinas-icon {background:url(../images/sprit-icons-main-sup-hover.png) no-repeat -115px;}
+#main-primary div a:hover .reportes-icon {background:url(../images/sprit-icons-main-sup-hover.png) no-repeat -138px;}
+#main-primary div a:hover .perfiles-icon	{background:url(../images/sprit-icons-main-sup-hover.png) no-repeat -161px;}
+#main-primary div div a:hover .afiche-icon-opc {background:url(../images/sprit-icons-main-sup.png) no-repeat;}
+#main-primary div div a:hover .notarias-icon-opc {background:url(../images/sprit-icons-main-sup.png) no-repeat -46px;}
+#main-primary div div a:hover .comunicados-icon-opc {background:url(../images/sprit-icons-main-sup.png) no-repeat -69px;}
+#main-primary div div a:hover .oficinas-icon-opc {background:url(../images/sprit-icons-main-sup.png) no-repeat -115px;}
+#main-primary div div a:hover .reportes-icon-opc {background:url(../images/sprit-icons-main-sup.png) no-repeat -138px;}
+#main-primary div div a:hover .perfiles-icon-opc {background:url(../images/sprit-icons-main-sup.png) no-repeat -161px;}
+
+
+#main-primary div div ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+	}	
+	
+/*#main li li {
+	float:left;
+	}	*/
+
+#main-primary div div a {
+	height:48px;
+	background:#bee7fb;
+	font-family:"Stag Sans Light", Arial, sans-serif;
+	font-size:13px;
+	color:#000;
+	line-height:52px;
+	*line-height:48px;
+	padding-left:45px;  /*padding-left:80px*/
+	display:block;
+	text-decoration:none;
+	border-top:1px solid #d9f2ff;
+	border-bottom:1px solid #89d5fa;
+	} 		
+	
+#main-primary div div a:hover{
+	background:#8ad0f3;
+	}
+	
+#main-primary div div a 
+.producto-icon, .capitulo-icon, .subcapitulo-icon, .rubros-icon,
+.categorias-icon, .transacciones-icon, .avisos-icon,.variables-icon, .etiquetas-icon {	
+	width:23px;
+	height:23px;
+	background:url(../images/sprit-icons-main-inf.png) no-repeat;
+	display:block;
+	position:absolute;
+	top:13px;
+	left:15px; /*left:50px;*/
+	}
+
+#main-primary div div a:hover .producto-icon {background:url(../images/sprit-icons-main-inf-hover.png) no-repeat;}
+#main-primary div div a:hover .capitulo-icon {background:url(../images/sprit-icons-main-inf-hover.png) no-repeat -23px;}	
+#main-primary div div a:hover .subcapitulo-icon {background:url(../images/sprit-icons-main-inf-hover.png) no-repeat -46px;}
+#main-primary div div a:hover .rubros-icon {background:url(../images/sprit-icons-main-inf-hover.png) no-repeat -69px;}
+#main-primary div div a:hover .categorias-icon {background:url(../images/sprit-icons-main-inf-hover.png) no-repeat -92px;}
+#main-primary div div a:hover .transacciones-icon {background:url(../images/sprit-icons-main-inf-hover.png) no-repeat -115px;}
+#main-primary div div a:hover .avisos-icon {background:url(../images/sprit-icons-main-inf-hover.png) no-repeat -138px;}
+#main-primary div div a:hover .variables-icon	{background:url(../images/sprit-icons-main-inf-hover.png) no-repeat -161px;}
+#main-primary div div a:hover .etiquetas-icon	{background:url(../images/sprit-icons-main-inf-hover.png) no-repeat -184px;}
+
+	
+.menu_opc_selected{
+	font-family:"Stag Sans Book", Arial, sans-serif;
+	background:url(../images/main-option-hover.jpg) repeat-x !important;;
+	border-top:1px solid #0076c1 !important;;
+}
+
+.menu_subOpc_selected{
+	background:#8ad0f3 !important;
+}

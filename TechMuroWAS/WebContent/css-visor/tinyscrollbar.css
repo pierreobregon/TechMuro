@@ -1,0 +1,203 @@
+/* Some lines are redudant. I just want to make sure its clear what is needed for a single instance. */
+
+/* scrollbar1 */
+#scrollbar1,
+#scrollbar2
+{
+    padding:0 0 0 0;
+    position:relative;
+}
+
+#scrollbar1 .viewport,
+#scrollbar2 .viewport
+{
+	width:855px;
+    height:140px;
+    overflow:hidden;
+    position:relative;
+    margin-top:47px;
+    margin-left:30px;
+}
+
+#scrollbar1 .overview,
+#scrollbar2 .overview
+{
+    list-style:none;
+    position:absolute;
+    left:0;
+    top:0;
+    padding:0;
+    margin:0;
+}
+
+#scrollbar1 .scrollbar,
+#scrollbar2 .scrollbar
+{
+    background:transparent url(../images-visor/bg-scrollbar-track-y.png) no-repeat 0 0;
+    position:absolute;
+    top:0;
+    right:10px;
+    width:15px;
+}
+
+#scrollbar1 .track,
+#scrollbar2 .track
+{
+    background:transparent url(../images-visor/bg-scrollbar-trackend-y.png) no-repeat 0 100%;
+    height:100%;
+    width:15px;
+    position:relative;
+}
+
+#scrollbar1 .thumb,
+#scrollbar2 .thumb
+{
+    background:transparent url(../images-visor/bg-scrollbar-thumb-y.png) no-repeat 50% 100%;
+    height:20px;
+    width:25px;
+    cursor:pointer;
+    overflow:hidden;
+    position:absolute;
+    top:10px;
+    left:-5px;
+}
+
+#scrollbar1 .thumb .end,
+#scrollbar2 .thumb .end
+{
+    background:transparent url(../images-visor/bg-scrollbar-thumb-y.png) no-repeat 50% 0%;
+    overflow:hidden;
+    height:5px;
+    width:25px;
+}
+
+/************************************ SCROLL COM ************************************/
+
+#scrollbar-com,
+#scrollbar-not
+{
+    padding:0 0 0 0;
+    position:relative;
+}
+
+#scrollbar-com .viewport
+{
+	width:750px;
+	height:600px;
+    display:block;
+    margin:20px 0;
+    overflow:hidden;
+    position:relative;
+}
+
+#scrollbar-not .viewport
+{
+	width:750px;
+	height:456px;
+    display:block;
+    margin:10px 0;
+    overflow:hidden;
+    position:relative;
+}
+
+#scrollbar-com .overview,
+#scrollbar-not .overview
+{
+    list-style:none;
+    position:absolute;
+    left:0;
+    top:0;
+    padding:0;
+    margin:0;
+}
+
+#scrollbar-com .scrollbar,
+#scrollbar-not .scrollbar
+{
+    background:transparent url(../images-visor/bg-scrollbar-track-y.png) no-repeat 0 0;
+    position:absolute;
+    top:0;
+    right:10px;
+    width:15px;
+    z-index: 1;
+}
+
+#scrollbar-com .track,
+#scrollbar-not .track
+{
+    background:transparent url(../images-visor/bg-scrollbar-trackend-y.png) no-repeat 0 100%;
+    height:100%;
+    width:15px;
+    position:relative;
+}
+
+#scrollbar-com .thumb,
+#scrollbar-not .thumb
+{
+    background:transparent url(../images-visor/bg-scrollbar-thumb-y.png) no-repeat 50% 100%;
+    height:20px;
+    width:25px;
+    cursor:pointer;
+    overflow:hidden;
+    position:absolute;
+    top:10px;
+    left:-5px;
+}
+
+#scrollbar-com .thumb .end,
+#scrollbar-not .thumb .end
+{
+    background:transparent url(../images-visor/bg-scrollbar-thumb-y.png) no-repeat 50% 0%;
+    overflow:hidden;
+    height:5px;
+    width:25px;
+}
+
+
+/************************************FIN SCROLL COM ***********************************/
+
+#scrollbar1 .disable,
+#scrollbar2 .disable,
+#scrollbar-com .disable,
+#scrollbar-not .disable
+{
+    display:none;
+}
+
+.noSelect,
+.te_middle
+{
+    user-select:none;
+    -o-user-select:none;
+    -moz-user-select:none;
+    -khtml-user-select:none;
+    -webkit-user-select:none;
+}
+
+
+/******************************************/
+/***			MOZILLA FIREFOX			***/
+/******************************************/	
+	@-moz-document url-prefix() { 
+		.noSelect,
+		.te_middle {
+		    user-select:none;
+		    -moz-user-select:none;
+		}
+	}
+
+/******************************************/
+/***		CSS para stilos 1360px		***/
+/******************************************/
+@media only screen and (max-width:1360px){
+	#scrollbar1 .viewport,
+	#scrollbar2 .viewport
+	{
+		width:615px;
+	    height:78px;
+	    margin-top:38px;
+	    margin-left:20px;
+	}
+	
+}
+

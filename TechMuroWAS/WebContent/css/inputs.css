@@ -1,0 +1,25 @@
+
+/************ CHECK BOX ***************/
+/*input.checkbox-style {
+  visibility: hidden;
+}*/
+.checkbox-style {
+    display: inline-block;
+	width: 15px;
+	height: 15px;
+	position: relative;
+}
+.checkbox-style label {
+	background:url(../images/checkbox.png) no-repeat 0 0;
+	display: block;
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	top: 1px;
+	z-index: 1;
+	cursor:pointer;
+}
+
+.checkbox-style input[type=checkbox]:checked + label {
+	background-position:-15px 0;
+}

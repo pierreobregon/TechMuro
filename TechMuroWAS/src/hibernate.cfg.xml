@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+ 
+<hibernate-configuration>
+    <session-factory>
+
+<mapping class="pe.conadis.tradoc.entity.beans.Acceso" />
+<mapping class="pe.conadis.tradoc.entity.beans.AccesoId" />  
+<mapping class="pe.conadis.tradoc.entity.beans.Accion" /> 
+<mapping class="pe.conadis.tradoc.entity.beans.AnularDocumento" /> 
+<mapping class="pe.conadis.tradoc.entity.beans.AnularExpediente" /> 
+<mapping class="pe.conadis.tradoc.entity.beans.Atender" /> 
+<mapping class="pe.conadis.tradoc.entity.beans.ControlTipoTramite" /> 
+<mapping class="pe.conadis.tradoc.entity.beans.Courier" /> 
+<mapping class="pe.conadis.tradoc.entity.beans.DerivacionAccion" /> 
+<mapping class="pe.conadis.tradoc.entity.beans.Derivar" /> 
+<mapping class="pe.conadis.tradoc.entity.beans.Devolucion" /> 
+<mapping class="pe.conadis.tradoc.entity.beans.Documento" /> 
+<mapping class="pe.conadis.tradoc.entity.beans.DocumentoPersona" /> 
+<mapping class="pe.conadis.tradoc.entity.beans.EntidadExterna" /> 
+<mapping class="pe.conadis.tradoc.entity.beans.EstadoExpediente" /> 
+<mapping class="pe.conadis.tradoc.entity.beans.EstadosDocumento" /> 
+<mapping class="pe.conadis.tradoc.entity.beans.Expediente" /> 
+<mapping class="pe.conadis.tradoc.entity.beans.ExpedienteDocPersona" /> 
+<mapping class="pe.conadis.tradoc.entity.beans.Feriado" /> 
+<mapping class="pe.conadis.tradoc.entity.beans.FlujoComunicacionUo" /> 
+<mapping class="pe.conadis.tradoc.entity.beans.IncidenciaMensajeria" /> 
+<mapping class="pe.conadis.tradoc.entity.beans.MenuSistema" />
+<mapping class="pe.conadis.tradoc.entity.beans.NumeracionDocumento" /> 
+<mapping class="pe.conadis.tradoc.entity.beans.NumeracionPersona" /> 
+<mapping class="pe.conadis.tradoc.entity.beans.OpcionMenu" />
+<mapping class="pe.conadis.tradoc.entity.beans.OpcionMenuId" />
+<mapping class="pe.conadis.tradoc.entity.beans.OpcionMenuPK" /> 
+<mapping class="pe.conadis.tradoc.entity.beans.Personal" /> 
+<mapping class="pe.conadis.tradoc.entity.beans.ReactivarDocumento" /> 
+<mapping class="pe.conadis.tradoc.entity.beans.ReactivarExpediente" />  
+<mapping class="pe.conadis.tradoc.entity.beans.Rol" />
+<mapping class="pe.conadis.tradoc.entity.beans.RolUsuario" />
+<mapping class="pe.conadis.tradoc.entity.beans.RolUsuarioId" />
+<mapping class="pe.conadis.tradoc.entity.beans.Sistema" />
+<mapping class="pe.conadis.tradoc.entity.beans.TipoDocumento" /> 
+<mapping class="pe.conadis.tradoc.entity.beans.UnidadOrganica" /> 
+<mapping class="pe.conadis.tradoc.entity.beans.Usuario" />
+
+
+		<mapping class="pe.conadis.tradoc.entity.EmployeeEntity" />
+        <mapping class="pe.conadis.tradoc.entity.xUsuario" />
+        <mapping class="pe.conadis.tradoc.entity.LogMuro" />
+        <mapping class="pe.conadis.tradoc.entity.Privilegio" />
+        <mapping class="pe.conadis.tradoc.entity.PerfilPrivilegio" />
+        <mapping class="pe.conadis.tradoc.entity.Perfil" />
+        <mapping class="pe.conadis.tradoc.entity.Afiche" />
+        <mapping class="pe.conadis.tradoc.entity.AficheOficina" />
+        <mapping class="pe.conadis.tradoc.entity.AficheOficinaId" />
+        <mapping class="pe.conadis.tradoc.entity.Oficina" />
+        <mapping class="pe.conadis.tradoc.entity.Plaza" />
+        <mapping class="pe.conadis.tradoc.entity.ComunicadoOficina" />
+        <mapping class="pe.conadis.tradoc.entity.ComunicadoOficinaId" />
+        <mapping class="pe.conadis.tradoc.entity.Comunicado" />
+        <mapping class="pe.conadis.tradoc.entity.OcurrenciaMuro" />
+        
+        <mapping class="pe.conadis.tradoc.entity.Aviso" />
+        <mapping class="pe.conadis.tradoc.entity.Capitulo" />
+        <mapping class="pe.conadis.tradoc.entity.Categoria" />
+        <mapping class="pe.conadis.tradoc.entity.Columna" />
+        <mapping class="pe.conadis.tradoc.entity.Contrato" />
+        <mapping class="pe.conadis.tradoc.entity.Nota" />
+        <mapping class="pe.conadis.tradoc.entity.Notaria" />
+        <mapping class="pe.conadis.tradoc.entity.NotariaContrato" />
+        <mapping class="pe.conadis.tradoc.entity.NotariaContratoId" />
+        <mapping class="pe.conadis.tradoc.entity.Oficina" />
+        <mapping class="pe.conadis.tradoc.entity.Producto" />
+        <mapping class="pe.conadis.tradoc.entity.Rubro" />
+        <mapping class="pe.conadis.tradoc.entity.Subcapitulo" />
+        <mapping class="pe.conadis.tradoc.entity.Transaccion" />
+        <mapping class="pe.conadis.tradoc.entity.TransaccionDetalle" />
+        <mapping class="pe.conadis.tradoc.entity.VariablesGenerales" />
+        
+    </session-factory>
+</hibernate-configuration>

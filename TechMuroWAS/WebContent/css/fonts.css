@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face{
+	font-family:"Stag Sans Light", Arial, helvetica, sans-serif;
+	src:url(../fonts/Stag Sans-Light.otf);
+	font-weight: normal;
+    font-style: normal;
+	}
+	
+@font-face{
+	font-family:"Stag Sans Light Italic", Arial, helvetica, sans-serif;
+	src:url(../fonts/Stag Sans-Light Italic.otf);
+	font-weight: normal;
+    font-style: normal;
+	}	
+	
+@font-face{
+	font-family:"Stag Sans Book", Arial, helvetica, sans-serif;
+	src:url(../fonts/Stag Sans-Book.otf);
+	font-weight: normal;
+    font-style: normal;
+	}	
+	
+@font-face{
+	font-family:"Stag Sans Book Italic", Arial, helvetica, sans-serif;
+	src:url(../fonts/Stag Sans-Book Italic.otf);
+	font-weight: normal;
+    font-style: normal;
+	}		
+	
+@font-face{
+	font-family:"Stage Sans Medium", Arial, helvetica, sans-serif;
+	src:url(../fonts/Stag Sans-Medium.otf);
+	font-weight: normal;
+    font-style: normal;
+	}		
+	
+@font-face{
+	font-family:"Stag Sans Medium Italic", Arial, Helvetica, sans-serif;
+	src:url(../fonts/Stag Sans-Medium Italic.otf);
+	font-weight: normal;
+    font-style: normal;
+	}
+	
+@font-face{
+	font-family:"Stag Sans Semibold", Arial, Helvetica, sans-serif;
+	src:url(../fonts/Stag Sans-Semibold.otf);
+	font-weight: normal;
+    font-style: normal;
+	}

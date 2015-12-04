@@ -1,0 +1,1538 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+header, nav, section, article, aside, figure, footer{
+	display:block;
+	}	
+
+body {
+	margin:0;
+	}
+
+h1, h2, h3, h4, h5, p, span {
+	margin:0;
+	padding:0;
+	}
+	
+h1 {
+	font-family:"Stag Sans Light", Arial, sans-serif;
+	font-size:21px;
+	color:#fff;
+	text-align:center;
+	}
+
+h2 {
+	font-family:"Stag Sans Book", Arial, sans-serif;
+	font-size:17px;
+	color:#07508f;
+	text-align:left;
+	}	
+	
+h3 {
+	font-family:"Stag Sans Sembold", Arial, sans-serif;
+	font-size:19px;
+	color:#000;
+	text-align:center;
+	}			
+
+/***********************************/	
+	
+#container {
+	width:1920px;
+	height:auto;
+	display:block;
+	overflow:hidden;
+	}
+	
+#header {
+	height:70px;
+	}
+	
+#header #logo-responsive {
+	width:1360px;
+	height:70px;
+	background:url(../images-visor/logo-header-responsive.jpg) no-repeat;
+	display:none;
+	padding:0;
+	margin:0;
+	}
+	
+#body {
+	width:100%;
+	height:auto;
+	display:block;
+	background:#F4F6F3;
+	overflow:hidden;
+	}	
+	
+/***************** BLOCK 1 ****************/		
+#block-tasas-tarifas {
+	width:1920px;
+	height:auto;
+	margin:0 auto;
+	position:relative;
+	margin-top:49px;
+	}	
+	
+#block-tasas-tarifas #head-title-tasas-tarifas {
+	width:659px;
+	height:50px;
+	background:#0a5899;
+	margin:0 auto;
+	line-height:50px;
+	display:block;
+	-webkit-border-radius:3px 3px 0 0;
+	-moz-border-radius:3px 3px 0 0;
+	-ms-border-radius:3px 3px 0 0;
+	position:absolute;
+	top:-49px;
+	left:50%;
+	margin-left:-330px;
+	}
+
+#block-tasas-tarifas #block-body-personas {
+	width:1816px;
+	height:247px;
+	background:#fff;
+	margin:0 auto;
+	padding:0;
+	list-style:none;
+	border:1px solid #DDE3EA;
+	border-radius:3px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	-ms-border-radius:3px;
+	-o-border-radius:3px;
+	display:block;
+	}
+
+#block-body-personas li {
+	width:907px;
+	height:auto;
+	display:block;
+	float:left;
+	}	
+	
+#block-body-personas li#border-left {
+	height:51px;
+	border-radius:5px 0 0 0;
+	-webkit-border-radius:5px 0 0 0;
+	-moz-border-radius:5px 0 0 0;
+	-ms-border-radius:5px 0 0 0;
+	}	
+	
+#block-body-personas li#border-right {
+	height:51px;
+	border-radius:0 5px 0 0;
+	-webkit-border-radius:0 5px 0 0;
+	-moz-border-radius:0 5px 0 0;
+	-ms-border-radius:0 5px 0 0;
+	-o-border-radius:0 5px 0 0;
+	}
+	
+#block-body-personas li #head-title-personas {
+/* 	height:51px; */
+	background: -webkit-linear-gradient(#fff, #f5f7f8);
+	background: -moz-linear-gradient(#fff, #f5f7f8);
+/* 	background:#23a5dd; */
+	color:#333 !important;
+	line-height:49px;
+/* 	border:1px solid #ddd; */
+	border-radius:2px 2px 0 0;
+	-moz-border-radius:2px 2px 0 0;
+	}
+	
+#block-body-personas li #head-title-personas h1 {
+	color:#333;
+} 	
+
+.list-persona-natural {
+	width:860px;
+	height:140px;
+	margin:50px 20px 0 30px;
+	padding:0;
+	list-style:none;
+	float:left;
+	overflow:auto;
+	}
+
+.list-persona-natural li {
+	max-width:410px;
+	margin-right:10px;
+	float:left;
+	}
+	
+.list-persona-natural li a {
+	line-height:27px;
+	background:url(../images-visor/list-icon-muro.png) no-repeat left;
+	background-position:0 11px;
+	font-family:"Stag Sans Light", Arial, sans-serif;
+	font-size:17px;
+	color:#000;
+	text-decoration:none;
+	padding:0 10px 0 30px;
+	display:block;
+	}
+
+.list-persona-natural li a:hover {
+	color:#0065b7;
+	}
+	
+	
+/* .list-persona-natural li a:hover {	 */
+/* 	background:#23a5dd url(../images-visor/list-icon-muro.png) no-repeat left; */
+/* 	background-position:0 11px; */
+/* 	}	 */
+
+/***************** BLOCK 2 ****************/
+#block-sub {
+	width:1920px;
+	height:auto;
+	margin:0 auto;
+	padding:40px 0;
+	overflow:hidden;
+	position:relative;
+	}			
+	
+#block-sub #block-body-notarias {
+	width:219px;
+	height:220px;
+	background:#fff;
+	margin-left:50px;
+	font-family:"Stag Sans Light", Arial, sans-serif;
+	text-decoration:none;
+	display:block;
+	border:1px solid #DDE3EA;
+	border-radius:2px;
+	-moz-border-radius:2px;
+	float:left;
+	}	
+	
+#block-sub #block-body-notarias p {
+	width:100px;
+	height:auto;
+	display:block;
+	font-size:16px;
+	color:#333;
+	line-height:18px;
+	margin:25px 0 20px 20px;	
+	float:left;
+}	
+
+#block-sub #block-body-notarias p.none-text {
+	display:none;
+}
+
+#block-sub #block-body-notarias .icon-notaria {
+	width:46px;
+	height:60px;
+	display:block;
+	background:url(../images-visor/icon-notaria.png) no-repeat;
+	margin:35px 0 0 30px;
+	float:left;
+}
+	
+#block-sub #block-body-notarias a {
+	width:auto;
+	height:27px;
+	display:block;
+	background: -webkit-linear-gradient(#0077bf, #00549c);
+	background: -moz-linear-gradient(#0077bf, #00549c);
+	background: -ms-linear-gradient(#0077bf, #00549c);
+	font-size:14px;
+	font-weight:bold;
+	color:#fff;
+	text-align:center;
+	text-decoration:none;
+	line-height:29px;
+	border:1px solid #00549c;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	-ms-border-radius:5px;
+	padding:0 13px;
+	float:left;
+	margin:0 0 0 20px;	
+	}
+	
+#block-body-notarias > h1 {
+	width:219px;
+	height:50px;
+	display:block;
+	background: -webkit-linear-gradient(#fff, #f5f7f8);
+	background: -moz-linear-gradient(#fff, #f5f7f8);
+	font-family:"Stag Sans Light", Arial, sans-serif;
+	text-align:center;
+	line-height:50px;
+	color:#333;
+	border-bottom:1px solid #DDE3EA;
+	}
+	
+#block-body-comunicados {
+	width:758px;
+	height:220px;
+	background:#fff;
+	border:1px solid #DDE3EA;
+	display:block;
+	margin-left:40px;
+	float:left;
+	border-radius:2px;
+	-moz-border-radius:2px;
+	}	
+	
+.marquee {
+	height:150px;
+	}
+
+#block-body-comunicados #head-title-comunicados {
+	width:auto;
+	height:50px;
+	background:#0065b7 url(../images-visor/icon-title-avisos.png) no-repeat left;
+	margin:0 auto;
+	line-height:50px;
+	display:block;
+	border-radius:2px 2px 0 0;
+	-moz-border-radius:2px 2px 0 0;
+	}	
+
+
+#block-body-comunicados .list-comunicados {
+	width:1486px;
+	height:150px;
+	margin:10px 0 0 30px;
+	padding:0 25px 0 0;
+	list-style:none;
+	display:block;
+	overflow:auto;
+	}	
+	
+.list-comunicados li {
+	float:left;
+	}	
+	
+.list-comunicados li a {
+	width:669px;
+	height:29px;
+	background:url(../images-visor/list-icon-comunicados.png) no-repeat left;
+	background-position:0 11px;
+	font-family:"Stag Sans Light", Arial, sans-serif;
+	font-size:17px;
+	color:#000;
+	/*margin-right:50px;*/
+	padding:0 10px 0 30px;
+	line-height:29px;
+	text-decoration:none;
+	display:block;
+	overflow:hidden;
+	}	
+	
+.list-comunicados li a.clear-right {
+	margin-right:0;
+	}	
+	
+.list-comunicados li a:hover {
+	color:#0065b7;
+	font-weight:bold;
+	}	
+	
+.list-comunicados li a span {
+	float:right;
+	}		
+
+/*******************************/	
+#block-body-canales {
+	width:758px;
+	height:220px;
+	background:#fff;
+	border:1px solid #DDE3EA;
+	margin-left:40px;
+	display:block;
+	float:left;
+	border-radius:2px;
+	-moz-border-radius:2px;
+	}	
+	
+#block-body-canales #head-title-canales {
+	width:auto;
+	height:50px;
+	background:#0065b7 url(../images-visor/icon-title-canales.png) no-repeat left;
+	margin:0 auto;
+	line-height:50px;
+	display:block;
+	border-radius:2px 2px 0 0;
+	-moz-border-radius:2px 2px 0 0;
+	}
+	
+.block-left-canales {
+	width:354px;
+	margin:55px 0 0 0;
+	display:block;
+	float:left;
+	}	
+		
+.block-left-canales p {
+	width:100%;
+	font-family:"Stag Sans Light", Arial, sans-serif;
+	font-size:17px;
+	color:#333;
+	text-align:center;
+	padding:0;
+	float:left;
+	}	
+	
+.block-left-canales .button-class {
+	width:auto;
+	height:27px;
+	background: -webkit-linear-gradient(#0077bf, #00549c);
+	background: -moz-linear-gradient(#0077bf, #00549c);
+	background: -ms-linear-gradient(#0077bf, #00549c);
+	font-family:"Stag Sans Book", Arial, sans-serif;
+	font-size:14px;
+	text-align:center;
+	line-height:29px;
+	border:1px solid #00549c;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	-ms-border-radius:5px;
+	padding:0 13px;
+	color:#fff;
+	margin:15px 0 0 135px;
+	display:block;
+	float:left;
+	text-decoration:none;
+}		
+	
+.block-right-canales {
+	width:404px;
+	height:170px;
+	background:url(../images-visor/icon-map-comunicados-max.png) no-repeat;
+	display:block;
+	float:right;
+	margin:0;
+}	
+	
+#block-sub #shadow-body-notarias {
+	width:219px;
+	height:44px;
+	background:url(../images-visor/shadow-body-notarias.png) no-repeat;
+	position:absolute;
+	top:259px;
+	left:50px;
+	}
+	
+#block-sub #shadow-body-comunicados {
+	width:760px;
+	height:33px;
+	background:url(../images-visor/shadow-body-block-sub.png) no-repeat;
+	position:absolute;
+	top:261px;
+	left:309px;
+	}		
+
+#block-sub #shadow-body-comunicados-max {
+	width:1558px;
+	height:33px;
+	background:url(../images-visor/shadow-body-comunicados.png) no-repeat;
+	position:absolute;
+	top:261px;
+	left:309px;
+	}	
+	
+#block-sub #shadow-body-canales {
+	width:760px;
+	height:33px;
+	background:url(../images-visor/shadow-body-block-sub.png) no-repeat;
+	position:absolute;
+	top:261px;
+	right:50px;
+	}
+	
+#header-popup-visor {
+	margin:0;
+	padding:0;
+	list-style:none;
+	}			
+	
+#header-popup-visor li#header-popup-canales {
+	min-width:1011px;
+	background:#07508f url(../images-visor/popup-detalle/header-canales-icon-popup.png) no-repeat left center;
+	font-family:"Stag Sans Book", Arial, sans-serif;
+	font-size:19px;
+	color:#fff;
+	line-height:49px;
+	padding-left:65px;
+	}	
+#header-popup-visor li#header-popup-notarios, 
+#header-popup-visor li#header-popup-comunicados{
+	min-width:735px;
+	font-family:"Stag Sans Book", Arial, sans-serif;
+	font-size:19px;
+	color:#fff;
+	line-height:49px;
+	padding-left:65px;
+	}
+	
+#header-popup-visor li#header-popup-notarios {
+	background:#07508f url(../images-visor/popup-detalle/header-sprits-icon-popup.png) no-repeat left center;
+	}	
+	
+#header-popup-visor li#header-popup-comunicados {
+	background:#07508f url(../images-visor/popup-detalle/header-comunicados-icon-popup.png) no-repeat left center;
+	}	
+	
+#header-popup-visor li {
+	width:30px;
+	height:49px;
+	display:block;
+	float:left;
+	}	
+	
+#header-popup-visor li#header-color-2 {
+	background:#137ec2;
+	}	
+	
+#header-popup-visor li#header-color-3 {
+	background:#23a5dd;
+	}
+	
+#header-popup-visor li#header-color-4 {
+	background:#3bbbec;
+	}
+	
+#header-popup-visor li#header-color-5 {
+	background:#8ad0f3;
+	}
+	
+#header-popup-visor li#header-color-6 {
+	background:#bee7fb;
+	}	
+	
+.container-body-popup-2 {
+	padding:19px;
+	float:left;
+	overflow:auto;
+	}	
+	
+.container-body-popup-2 iframe {	
+	border:1px solid #c6c6c6;	
+	}
+.container-body-popup {
+	padding:25px 100px;
+	float:left;
+	overflow:hidden;
+	}	
+	
+.popup-padding {
+	padding:25px 0;
+	}	
+	
+.container-body-popup h3 {
+	margin:40px 0 30px 0;
+	}	
+
+.container-body-popup h3.margin-title {
+	margin:0 0 30px 0;
+}
+
+.container-body-popup p {
+	max-width:750px;	
+	font-size:15px;
+	font-family:"Stag Sans Book", Arial, sans-serif;
+	line-height:17px;
+	margin:15px 0 10px 0;
+	}		
+	
+.container-body-popup p.pre-white {
+	max-width:750px;	
+	/* font-family:"Stag Sans Book", Arial, sans-serif; */
+	white-space:pre-line;
+	margin-bottom:40px;
+	}
+	
+.table-notarias	{
+	width:100%;
+	max-height:471px;
+	font-family:"Stag Sans Book", Arial, sans-serif;
+	font-size:15px;
+	border-left:1px solid #a6a6a6;
+	overflow:auto;
+	display:block;
+	}
+	
+.table-notarias tr {
+	width:250px;
+	border-color:transparent;
+	}	
+	
+/*.table-notarias tr.static-header {
+	position:fixed;
+	}*/
+
+.table-notarias td.header-grid-popup {
+	min-width:240px;
+	font-family:"Stag Sans Book", Arial, sans-serif;
+	line-height:35px;
+	color:#fff;
+	text-align:center;
+	background:url(../images-visor/popup-detalle/header-table.png) repeat-x;
+	word-wrap:break-word;
+	border-right:1px solid #005697;
+	border-bottom:none;
+	padding:0;
+	}	
+	
+.table-notarias td {
+	max-width:240px;
+	font-family:"Stag Sans light", Arial, sans-serif;
+	font-size:14px;
+	border-right:1px solid #a6a6a6;
+	border-bottom:1px solid #a6a6a6;
+	padding:12px 10px;
+	word-wrap:break-word;
+	}
+
+.table-notarias td a {
+	color:#000;
+	font-style:oblique;
+	}	
+	
+.table-notarias td p {
+	padding:0;
+	margin:0;
+	}	
+	
+.table-notarias td a:hover {
+	color:#137ec2;
+	}		
+	
+.container-float {
+	display:block;
+	position:relative;
+	}	
+	
+#footer-popup-detalle {
+	width:100%;
+	height:49px;
+	background:#07508f;
+	display:block;
+	float:left;
+	}	
+	
+.table-notarias-details	{
+	width:100%;
+	max-height:480px;
+	font-family:"Stag Sans Book", Arial, sans-serif;
+	font-size:15px;
+	border-left:1px solid #a6a6a6;
+	margin-top:16px;
+	overflow:auto;
+	display:block;
+	}	
+	
+.table-notarias-details tr {
+	width:250px;
+	border-color:transparent;
+	}	
+	
+.table-notarias-details	 td.header-grid-popup-1,
+.table-notarias-details	 td.header-grid-popup-2 {
+	font-family:"Stag Sans Book", Arial, sans-serif;
+	line-height:35px;
+	color:#fff;
+	text-align:center;
+	background:url(../images-visor/popup-detalle/header-table.png) repeat-x;
+	word-wrap:break-word;
+	border-right:1px solid #005697;
+	border-bottom:none;
+	padding:0;
+	}	
+	
+.table-notarias-details	 td.header-grid-popup-1 {
+	min-width:240px;	
+	}
+	
+.table-notarias-details	 td.header-grid-popup-2 {
+	min-width:498px;	
+	}
+	
+.table-notarias-details td {
+	min-width:220px;
+	font-family:"Stag Sans light", Arial, sans-serif;
+	font-size:14px;
+	border-right:1px solid #a6a6a6;
+	border-bottom:1px solid #a6a6a6;
+	padding:12px 10px;
+	word-wrap:break-word;
+	}
+	
+.table-notarias-details	.dates-contact {
+	max-width:488px;
+	}	
+	
+.table-notarias-details	 td a {
+	color:#000;
+	}	
+	
+.table-notarias-details	 td p {
+	padding:0;
+	margin:0;
+	}	
+	
+.table-notarias-details	 td a:hover {
+	color:#137ec2;
+	}		
+	
+.cboxLoadedContent img {
+	width:50%;
+	height:auto;
+	}	
+
+/* Style for overlay and box */
+.overlay{
+	background:transparent url(../images-visor/overlay.png) repeat top left;
+	position:fixed;
+	top:0px;
+	bottom:0px;
+	left:0px;
+	right:0px;
+	z-index:8000;
+	display:none;
+	}
+
+.box{
+	width:950px;
+	font-family:"Stag Sans Book", Arial, sans-serif;
+	font-size:16px;
+	position:fixed;
+	left:24.9%;
+	top:30%;
+	background:#fff;
+	box-shadow: 0 1px 5px #333;
+	-moz-box-shadow: 0 1px 5px #333;
+	-webkit-box-shadow: 0 1px 5px #333;
+	-ms-box-shadow: 0 1px 5px #333;
+	z-index:101;
+	*padding-bottom:-40px;
+	z-index:90;
+	display:block;
+	}	
+	
+.box-map{
+	width:1226px;
+	font-family:"Stag Sans Book", Arial, sans-serif;
+	font-size:16px;
+	position:fixed;
+	left:347px;
+	top:214px;
+	background:#fff;
+	box-shadow: 0 1px 5px #333;
+	-moz-box-shadow: 0 1px 5px #333;
+	-webkit-box-shadow: 0 1px 5px #333;
+	-ms-box-shadow: 0 1px 5px #333;
+	z-index:101;
+	*padding-bottom:-40px;
+	z-index:90;
+	display:block;
+	}	
+a.boxclose {
+	width:130px;
+	height:49px;
+	background:url(../images-visor/popup-afiches/controls.png) no-repeat 0 0;
+	cursor:pointer;
+	position:absolute;
+	bottom:0;
+	right:0;
+	z-index:900000;
+	}	
+	
+a.boxclose:hover{
+	background-position:0 -49px;
+	}	
+	
+.te_content img {
+	border:1px solid #137ec2;
+	margin-bottom:-4px;
+	}
+	
+.container-description-par {
+	width:1816px;
+	height:32px;
+	line-height:34px;
+	background:#e0f6fc;
+	font-family:'Stag Sans Light', Arial, sans-serif;
+	font-size:17px;
+	color:#333;
+	border:1px solid #DDE3EA;
+	text-align:center;
+	position:absolute;
+	top:50px;
+	left:51px;
+	}
+	
+.container-description-par .description-par {
+	position:relative;
+	}
+	
+.container-description-par .description-par p {
+	width:1559px;
+	height:36px;
+	position:absolute;
+	top:0;
+	left:0;
+	}	
+	
+.container-description-par .description-par a {
+	width:259px;
+	background:url(../images-visor/background-line-avisos-importantes.png) no-repeat left center;
+	text-decoration:none;
+	font-family:"Stag Sans Book", Arial, sans-serif;
+	font-size:15px;
+	color:#0065b7;
+	position:absolute;
+	top:-1px;
+	right:1px;
+	}	
+	
+.container-description-par .description-par a:hover {
+	color:#3abbec;
+	}	
+	
+.container-description-par .description-par a .par-avisos {
+	margin-left:45px;
+	}
+
+.icon-avisos-importantes {
+	width:19px;
+	height:15px;
+	background:url(../images-visor/icon-title-avisos-importantes.png) no-repeat;
+	display:block;
+	position:absolute;
+	top:10px;
+	left:50px;
+	}
+	
+.superindice {
+	vertical-align:super;
+	font-size: 10px;
+	} 
+	
+.subindice {
+	vertical-align:sub;
+	font-size: 10px;
+	}	
+	
+img.cboxPhoto {
+	width:100%;
+	height:750px;
+	display:block;
+	overflow:auto;
+	}	
+
+.popup-height {
+	height:800px;
+	overflow:auto;
+	}		
+	
+/**** TABLE TARIFARIO ****/
+	.container-tarifario-popup {
+		max-width:1200px;
+		max-height:800px;	
+		margin:10px 0;
+		overflow:auto;	
+	}
+
+	.table-tarifario {
+		width:716px;
+		font-family:"Arial Narrow", Verdana, sans-serif;
+		border:1px solid #333;
+		margin-right:30px;
+	}
+	
+	.table-tarifario td table {
+		border-spacing: 0;
+	}
+	
+	.td-producto {
+		height:53px;
+		background:#2280f2;
+		font-size:18px;
+		color:#fff;
+		font-weight:bold;
+		text-align:center;
+	}
+	
+	.td-capitulo, .td-sub-capitulo {
+		width:100%;
+		height:33px;
+		background:#073b7b;
+		color:#fff;
+		font-weight:bold;
+		font-size:12px;
+		border-top:1px solid #fff;
+	}
+
+	.td-rubros {
+		height:24px;
+		background:#2280f2;
+		color:#fff;
+		text-align:center;
+		font-weight:bold;
+		font-size:11px;
+		border-top:1px solid #333;
+		border-bottom:1px solid #333;
+		border-right:1px solid #fff;
+		word-wrap:break-word;
+		white-space:pre-wrap;
+	}
+	
+	.td-rubros:last-child {
+		border-right:0;
+	}
+	
+	.td-rubros-index {
+		/*width:130px;*/
+		background:#003399;
+		text-align:left;
+		font-weight:bold;
+	}
+	
+	.td-rubros-2 {
+		width:99px;
+		border-left:1px solid #fff;
+	}	
+	
+	.td-rubros-3 {
+		width:130px;
+		border-left:1px solid #fff;
+	}	
+	
+	.td-rubros-4 {
+		width:130px;
+		border-left:1px solid #fff;
+	}	
+	
+	.td-rubros-5 {
+		width:223px;
+		border-left:1px solid #fff;
+	}	
+
+	.td-categorias {
+		/*width:100%;*/
+		height:25px;
+		background:#ccecff;
+		font-weight:bold;
+		font-size:11px;
+		word-wrap:break-word;
+		white-space:pre-wrap;
+	}
+	
+	.td-categorias span {
+		font-weight:normal;
+	}
+	
+	.td-transacciones {
+		width:100%;
+		height:auto;
+		background:#fff;
+		font-size:11px;
+	}
+	
+	.table-transacciones {
+		margin-bottom:21px;
+		border-bottom:1px solid #333;
+	}
+	
+	.td-transacciones td {
+		height:auto;
+		font-size:11px;
+		padding: 10px 0;
+		border-top:1px dashed #333;
+		border-left: 0;
+		border-right: 1px solid #333;
+	}
+	
+	.td-transacciones td:last-child {
+		border-right:0;
+	}
+		
+	.td-transacciones-1 {
+		width:130px;
+	}
+	
+	.td-left{
+		border-left: 1px solid #333;
+	}
+	
+	.td-transacciones-2 {
+		width:99px;
+		border-left:1px solid #333;
+	}	
+	
+	.td-transacciones-3 {
+		width:130px;
+		border-left:1px solid #333;
+	}	
+	
+	.td-transacciones-4 {
+		width:130px;
+		border-left:1px solid #333;
+	}	
+	
+	.td-transacciones-5 {
+		width:223px;
+		border-left:1px solid #333;
+	}	
+	
+	 .center-trans {
+	 	text-align:center;
+	 }
+	 
+	 .td-notas {
+	 	
+	 }
+	 
+	 .td-notas .header-notas {
+	    border-top:1px solid #333;
+	 	width:100%;
+	 	height:22px;
+	 	background:#003399;
+	 	font-weight:bold;
+	 	color:#fff;
+	 	text-align:center;
+	 	font-size:11px;
+	 	padding:0;
+	 }
+	 
+	 .td-notas td {
+	 	font-size:11px;
+/* 	 	font-weight:normal !important; */
+	 	font-weight:inherit;
+	 	padding:5px 0;
+	 }
+	 
+	 .td-notas td span {
+	 	font-weight:normal;
+	 }
+		
+		
+.icon-header-notarias {
+	width:47px;
+	height:40px;
+	background:url(../images/icon-title-tarifas-responsive.png) no-repeat left;
+	display:block;
+}		
+
+/****** AVISOS IMPORTANTES *****/
+.table-avisos {
+	width:800px;
+	max-height:471px;
+	font-family:"Stag Sans Book", Arial, sans-serif;
+	font-size:15px;
+	border-left:1px solid #a6a6a6;
+	overflow:auto;
+	display:block;
+	}
+	
+.table-avisos td.header-grid-popup-avisos,
+.table-avisos td.header-grid-popup-avisos-circular {
+	height:auto;
+	font-family:"Stag Sans Book", Arial, sans-serif;
+	line-height:35px;
+	color:#fff;
+	text-align:center;
+	background:url(../images-visor/popup-detalle/header-table.png) repeat-x;
+	word-wrap:break-word;
+	border-right:1px solid #005697;
+	border-bottom:none;
+	padding:0;
+	}	
+
+.table-avisos td.header-grid-popup-avisos {
+	width:580px;
+	}
+
+.table-avisos td.header-grid-popup-avisos-circular {
+	width:150px;
+	}
+
+.table-avisos td {
+	font-family:"Stag Sans light", Arial, sans-serif;
+	font-size:14px;
+	border-right:1px solid #a6a6a6;
+	border-bottom:1px solid #a6a6a6;
+	padding:12px 10px;
+	word-wrap:break-word;
+	}
+	
+/*******************************/	
+
+/****** ICONS POPUP *******/
+.icon-popup-header-visor-tarifas,
+.icon-popup-header-visor-notarias,
+.icon-popup-header-visor-comunicados,
+.icon-popup-header-visor-canales,
+.icon-popup-header-visor-avisos {
+	width:49px;
+	height:49px;
+	background:url(../images-visor/sprits-icon-popup-header-visor.png);
+	display:block;
+	border:0;
+	margin-left:15px;
+	position:absolute;
+	top:0;
+	left:0;
+	}
+	
+.icon-popup-header-visor-notarias {
+	background-position:-49px;
+	}
+	
+.icon-popup-header-visor-comunicados {
+	background-position:-98px;
+}	
+
+.icon-popup-header-visor-canales {
+	background-position:-147px;
+}
+
+.icon-popup-header-visor-avisos {
+	background-position:-196px;
+}
+
+#scrollbar-com {
+	width:750px;
+	max-height:550px;
+	margin:10px 0;
+	padding:10px 10px 10px 0;
+	overflow:auto;
+}
+
+.table-notarias {
+	max-height:371px;
+	overflow:auto;
+}
+
+
+/******************************************/
+	/***			MOZILLA FIREFOX			***/
+	/******************************************/	
+	@-moz-document url-prefix() { 
+		#block-sub #block-body-notarias p {
+			width:103px;
+			}		
+	
+		.block-left-canales .button-class,
+		#block-sub #block-body-notarias a {
+			border-radius:5px;
+			line-height:27px;
+			font-weight:bolder;
+		}
+		
+	}	
+	
+
+/******************************************/
+/***		CSS para stilos 1360px		***/
+/******************************************/
+@media only screen and (max-width:1360px){
+	h1 {
+		font-size:18px;
+		}	
+	
+	#container {
+		width:1360px;
+		height:auto;
+		}
+		
+	#header img {
+		display:none;
+		}
+	
+	#header #logo-responsive {
+		display:block;
+		}	
+		
+	/******* BLOCK 1 *******/	
+		
+	#block-tasas-tarifas {
+		width:1360px;
+		margin-top:40px;
+		}	
+		
+	#block-tasas-tarifas #head-title-tasas-tarifas {
+		width:499px;
+		height:41px;
+		
+		line-height:41px;
+		background:#0a5899;
+		top:-39px;
+		left:50%;
+		margin-left:-250px;
+		}
+		
+	#block-tasas-tarifas #block-body-personas {
+		width:1323px;
+		height:167px;
+		}
+		
+	#block-tasas-tarifas #shadow-body-tasas-tarifas {
+		width:1325px;
+		height:20px;
+		background:url(../images-visor/shadow-body-tasas-tarifas-responsive.png) no-repeat;
+		position:absolute;
+		top:168px;
+		left:20px;
+		}		
+		
+	#block-body-personas li {
+		width:660px;
+		}	
+		
+	#block-body-personas li#border-left {
+		height:41px;
+		}	
+		
+	#block-body-personas li#border-right {
+		height:41px;
+		}
+		
+	#block-body-personas li #head-title-personas {
+		height:41px;
+		line-height:41px;
+		}	
+
+	.marquee {
+		height:100px;
+		}
+		
+	.table-avisos {
+		width:730px;
+		max-height:408px;	
+		}
+		
+	/***************** BLOCK 2 ****************/
+	#block-sub {
+		width:1360px;
+		padding:20px 0 18px 0;
+		}			
+		
+	#block-sub #block-body-notarias {
+		width:168px;
+		height:170px;
+		margin-left:17px;
+		}	
+
+	#block-sub #block-body-notarias p {
+		display:none;
+	}
+	
+	#block-sub #block-body-notarias p.none-text {
+		width:80px;
+		height:auto;
+		display:block;
+		font-size:15px;
+		color:#333;
+		margin:25px 0 20px 20px;	
+		float:left;
+		}
+	
+	#block-sub #block-body-notarias .icon-notaria {
+		width:34px;
+		height:44px;
+		background:url(../images-visor/icon-notaria-responsive.png) no-repeat;
+		margin:20px 0 0 20px;
+	}
+		
+	#block-sub #block-body-notarias a {
+		margin:0 0 0 20px;	
+		}
+		
+	#block-body-notarias > h1 {
+		width:100%;
+		height:39px;
+		line-height:39px;
+		}	
+		
+/* 	#block-sub #block-body-notarias { */
+/* 		width:168px; */
+/* 		height:80px; */
+/* 		background:url(../images-visor/block-notarias-responsive.png) no-repeat; */
+/* 		margin-left:17px; */
+/* 		padding-top:90px; */
+/* 		} */
+		
+/* 	#block-body-notarias > h1 { */
+/* 		width:110px; */
+/* 		font-size:18px; */
+/* 		line-height:18px; */
+/* 		} */
+		
+	#block-body-comunicados {
+		width: 556px;
+		height: 170px;
+		margin-left: 20px;
+		}	
+		
+	#block-body-comunicados #head-title-comunicados {
+		height:40px;
+		background:#0a5899 url(../images-visor/icon-title-avisos-responsive.png) no-repeat left;
+		line-height:40px;
+		}		
+		
+	#block-body-comunicados .list-comunicados {
+		width:1105px;
+		height:100px;
+		margin:15px 0 0 20px;
+		padding:0;
+		}	
+		
+	.list-comunicados li a {
+		width:485px;
+
+		height:20px;
+		font-size:16px;
+		margin-right:20px;
+		padding:0 10px 0 30px;
+		line-height:20px;
+		}	
+		
+	.list-comunicados li a:hover {
+		width:483px;
+		height:18px;
+		line-height:16px;
+		}
+		
+	.list-comunicados li a.clear-right {
+		margin-right:0;
+		}
+
+
+	/*******************************/	
+	#block-body-canales {
+		width:556px;
+		height:170px;
+		margin-left:20px;
+		}	
+		
+	#block-body-canales #head-title-canales {
+		height:40px;
+		background:#0a5899 url(../images-visor/icon-title-canales-responsive.png) no-repeat left;
+		line-height:40px;
+		}
+		
+	.block-center-canales {
+		height:83px;
+		}	
+		
+	.block-left-canales {
+		width:246px;
+		margin:13px 0 0 0;
+		}	
+					
+	.block-left-canales p {
+		width:159px;
+		font-size:15px;
+		margin:13px 0 0 45px;
+		}
+		
+	.block-left-canales .button-class {
+		margin:15px 0 0 85px;
+		}		
+		
+	.block-right-canales {
+		width:310px;
+		height:130px;
+		background:url(../images-visor/icon-map-comunicados-max-responsive.png) no-repeat;
+	}	
+		
+		
+		
+	.box{
+		left:14.4%;
+		}
+		
+	.box-map{
+		left:5%;
+		top:5%;
+		}			
+		
+	.container-description-par {
+		width:1322px;
+		height:30px;
+		line-height:32px;
+		top:42px;
+		left:19px;
+		}
+		
+	.container-description-par p span {
+		display:none;
+		}	
+		
+	.container-description-par .description-par a {
+		width:239px;
+		}	
+		
+	.icon-avisos-importantes {
+		left:33px;
+		}	
+		
+	.container-description-par .description-par a .par-avisos {
+		margin-left:30px;
+		}	
+			
+	.container-description-par .description-par p {
+		width:1060px;
+		height:32px;
+		font-size:14px;
+		}		
+		
+	.list-persona-natural {
+		width:630px;
+		height:82px;
+		margin:40px 20px 0 20px;
+		}
+		
+	.list-persona-natural li {
+		max-width:295px;
+		/*margin-right:5px;*/
+		}
+		
+	.list-persona-natural li a {
+		background-position:0 7px;
+		line-height:20px;
+		font-size:15px;
+		padding:0 10px 0 30px;
+		}	
+		
+	.popup-height {
+		height:500px;
+		}	
+		
+	.container-tarifario {
+		max-height:500px; 
+		}		
+		
+	
+	.container-tarifario-popup {
+		max-width:800px;
+		max-height:600px;	
+
+		}
+	}	
+
+/******************************************/
+/***		CSS para stilos 1280px		***/
+/******************************************/
+@media only screen and (max-width:1280px){
+	#container {
+		width:1280px;
+		}
+	
+	#header #logo-responsive {
+		width:1280px;
+		background:url(../images-visor/logo-header-responsive-2.jpg) no-repeat;
+		}
+		
+	#block-tasas-tarifas {
+		width:1239px;
+		}	
+		
+	.list-persona-natural {
+		width:579px;
+		}
+		
+	.list-persona-natural li {
+		max-width:271px;
+		}		
+		
+	#block-body-personas li {
+		width:619px;
+		}			
+		
+	.container-description-par {
+		width:1239px;
+		left:0;
+		}
+		
+	.container-description-par .description-par p {
+		width:1020px;
+		height:32px;
+		font-size:13.5px;
+		}		
+		
+	.container-description-par .description-par a {
+		width:215px;
+		font-size:13.5px;
+		top:1px;
+		right:5px;
+		}	
+		
+	.icon-avisos-importantes {
+		top:8px;
+		left:30px;
+		}
+		
+	#block-tasas-tarifas #block-body-personas {
+		width:1239px;
+		height:167px;
+		}
+
+		
+	/************** comunicados **************/
+	#block-body-comunicados {
+		width: 516px;
+		}	
+		
+	/************** canales ***************/	
+	#block-body-canales {
+		width:516px;
+		}	
+
+	.block-left-canales {
+		width:206px;
+		}	
+					
+	.block-left-canales p {
+		margin:13px 0 0 25px;
+		}
+		
+	.block-left-canales .button-class {
+		margin:15px 0 0 65px;
+		}		
+		
+/* 	.block-right-canales { */
+/* 		margin:20px 0 0 0; */
+/* 		}	 */
+		
+	.container-tarifario-popup {
+		max-width:740px;
+		max-height:600px;	
+		}
+		
+	.box-map{
+		left:2%;
+		top:5%;
+		}	
+		
+	.table-avisos {
+		width:710px;
+		}		
+		
+	/******************************************/
+	/***			MOZILLA FIREFOX			***/
+	/******************************************/	
+	@-moz-document url-prefix() { 
+		.container-description-par .description-par p {
+			font-size:13px;
+			}		
+	
+		.container-description-par .description-par a {
+			font-size:13px;
+			}
+			
+		.block-left-canales .button-class {
+			margin:15px 0px 0px 63px;
+			}	
+		
+		}		
+    }

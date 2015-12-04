@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<html><head>
+<meta charset="utf-8">
+<title>:: Muro Tecnol&oacute;gico ::</title>
+<meta http-equiv="X-UA-Compatible" content="IE=8" />
+<link href="css/core.css" rel="stylesheet" type="text/css">
+
+<script src="js/URL_DD_roundies.js"></script>
+
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/grid.locale-es.js"></script>
+<script type="text/javascript" src="js/jquery.jqGrid.min.js" ></script>
+
+<!--<script type="text/javascript" src="js/jquery-1.3.2.js"></script>
+<script type="text/javascript" src="js/jquery.filestyle.pack.js" ></script>-->
+
+<!-- Select -->
+<script type="text/javascript" src="js/bootstrap-3.0.3.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-multiselect.js"></script>
+<script type="text/javascript" src="js/prettify.js"></script>
+<script type="text/javascript" src="js/jquery.filestyle.js"></script>
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script type="text/javascript">
+ 
+ jQuery(document).ready(function() {
+     jQuery("#loadtextbotton").click(function() {
+         jQuery("#photo").trigger('click');
+     });
+ });
+ 
+ function updateMessage() {
+     jQuery("#textisselectedanyfile").val(jQuery("#photo").val());
+     if (jQuery("#photo").val() == "") {
+         jQuery("#textisselectedanyfile").val("No ha seleccionado ning&uacute;n archivo");
+     }
+ }
+ 
+</script>
+
+</head>
+
+<body>
+
+<div id="container">
+
+	<!-- Header -->
+            <a class="activator" id="activator"></a>
+            
+                <!-- Grilla -->
+
+                <div class="overlay" id="overlay" style="display:none;">
+                	<div class="box" id="box">
+                    <a class="boxclose" id="boxclose"></a>
+                    	<div id="title-header-popup">Agregar Afiche</div>
+                        <form method="post" class="scrollbar">
+                            <ul id="body-popup">
+                                <li class="middle-popup">Imagen / Video:</li>
+                                <li id="right-li">
+                                	<div id="add-afiches"><img src="images/afiches-img.png" alt="" /></div>
+                                    <div class="middle-popup">
+                                    	<input id="textisselectedanyfile" type="text" value="Seleccionar archivo"  class="input-file"/>
+										<input type="file" name="photo" id="photo" style="display:none" onchange="updateMessage()"/>
+										<div id="loadtextbotton"></div>
+                                    </div>
+								</li>
+                                <li>URL:</li>
+                                <li id="right-li"><input type="text" name="input" class="input-popup-2"></li>
+                                <li>Oficina:</li>
+                                <li id="right-li">
+                                    <select id="oficinas" multiple="multiple">
+                                        <option value="0486">0486 - Principal</option>
+                                        <option value="0320">0320 - Lur&iacute;n</option>
+                                        <option value="0567">0567 - C.C. Camino Real</option>
+                                        <option value="0998">0998 - Alcazar</option>
+                                        <option value="0877">0877 - Centro</option>
+                                        <option value="0543">0543 - Huancayo</option>
+                                        <option value="0998">0998 - Alcazar</option>
+                                        <option value="0877">0877 - Centro</option>
+                                        <option value="0543">0543 - Huancayo</option>
+                                        <option value="0998">0998 - Alcazar</option>
+                                        <option value="0877">0877 - Centro</option>
+                                        <option value="0543">0543 - Huancayo</option>
+                                        <option value="0998">0998 - Alcazar</option>
+                                        <option value="0877">0877 - Centro</option>
+                                        <option value="0543">0543 - Huancayo</option>
+                                        <option value="0998">0998 - Alcazar</option>
+                                        <option value="0877">0877 - Centro</option>
+                                        <option value="0543">0543 - Huancayo</option>
+                                    </select>
+                              	</li>
+                                <li>Descripci&oacute;n:</li>
+                              	<li id="right-li"><textarea id="text-area-1" /></textarea></li>
+                                <li class="li-bottom">Mostrar Miniatura:</li>
+                                <li id="right-li" class="li-bottom"><input type="checkbox" name="chbox" id=""></li>
+                                <li class="li-bottom">Fecha de Creaci&oacute;n:</li>
+                                <li id="right-li" class="li-bottom">09/12/2011</li>
+                                <li>Fecha de Actualizaci&oacute;n:</li>
+                                <li id="right-li">28/11/2012</li>
+                            </ul>
+                            <ul id="button-popup">
+                            	<li><input type="submit" value="Guardar" class="button-image-complete-gren"></li>
+                            	<li><input type="button" value="Cancelar" class="button-image-complete" id="boxclose"><li>
+                            </ul>
+                        </form>
+                        
+                    </div>
+                </div>
+            <!-- Find Grilla -->
+            </div>
+            <!-- The JavaScript -->
+            
+			<!--<script language="javascript" type="text/javascript">
+                $(function() {
+                     $(".input-file").filestyle({ 
+                         image: "images/input-file.png",
+                         imageheight:27,
+                         imagewidth: 84,
+                         width: 160
+                     });
+                });
+            </script>-->
+                        
+            <script type="text/javascript">
+                $(function() {
+                    $('#activator').click(function(){
+                        $('#overlay').fadeIn('fast',function(){
+                            $('#box').animate({'top':'15%'},500);
+                        });
+                    });
+                    $('#boxclose').click(function(){
+                        $('#box').animate({'top':'15%'},500,function(){
+                            $('#overlay').fadeOut('fast');
+                        });
+                    });
+    
+                });
+            </script>
+            
+            <script type="text/javascript">
+			    $(document).ready(function() {
+			        window.prettyPrint() && prettyPrint();
+                    
+                    $('#oficinas').multiselect({
+                        includeSelectAllOption: true,
+			        	enableCaseInsensitiveFiltering: true
+                    });
+			    });
+			</script>
+            
+            	
+                
+                
+</div>
+</body>
+</html>

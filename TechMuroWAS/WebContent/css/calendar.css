@@ -1,0 +1,104 @@
+/* calendar icon */
+img.tcalIcon {
+	cursor: pointer;
+	margin-left: 1px;
+	vertical-align: middle;
+	position:absolute;
+	top:12px;
+	right:5px;
+}
+	
+/* calendar container element */
+div#tcal {
+	width: 194px;
+	letter-spacing:1px;	
+	position: absolute;
+	visibility: hidden;
+	z-index: 100;
+	padding: 2px 2px 0 0;
+}
+/* all tables in calendar */
+div#tcal table {
+	height:28px;
+	width: 100%;
+	border: 1px solid #e9e9e9;
+	background-color: #FFF;
+	box-shadow: 3px 3px 5px rgba(000, 000, 000, 0.4);
+	-webkit-box-shadow: 3px 3px 5px rgba(000, 000, 000, 0.4);
+	-moz-box-shadow: 3px 3px 5px rgba(000, 000, 000, 0.4);
+}
+/* navigation table */
+div#tcal table.ctrl {
+	border-bottom: 0;
+}
+/* navigation buttons */
+div#tcal table.ctrl td {
+	width: 15px;
+	height: 15px;
+}
+/* month year header */
+div#tcal table.ctrl th {
+	font-size:13px;
+	background-color: white;
+	color: black;
+	border: 0;
+	font-weight:inherit;
+}
+/* week days header */
+div#tcal th {
+	text-align: center;
+	padding: 6px;
+	font-size: 10px;
+	background-color: #2f518c;
+	color: #fff;
+}
+/* date cells */
+div#tcal td {
+	text-align: center;
+	padding: 5px;
+	font-size: 11px;
+	cursor: pointer;
+	color: #666;
+	font-weight: normal;
+}
+/* date highlight
+   in case of conflicting settings order here determines the priority from least to most important */
+div#tcal td.othermonth {
+	color: #cfcfcf;
+}
+div#tcal td.weekend {
+	background-color: #cae6fa;
+}
+div#tcal td.today {
+	border: 1px solid #94c04d;
+	background:#def2bf;
+}
+div#tcal td.selected {
+	background-color: #94c04d;
+	border: 1px solid #7ea146;
+	font-weight:bold;
+	color:#fff;
+}
+/* iframe element used to suppress windowed controls in IE5/6 */
+iframe#tcalIF {
+	position: absolute;
+	visibility: hidden;
+	z-index: 98;
+	border: 0;
+}
+/* transparent shadow */
+div#tcalShade {
+	position: absolute;
+	visibility: hidden;
+	z-index: 99;
+}
+div#tcalShade table {
+	border: 0;
+	border-collapse: collapse;
+	width: 100%;
+}
+div#tcalShade table td {
+	border: 0;
+	border-collapse: collapse;
+	padding: 0;
+}

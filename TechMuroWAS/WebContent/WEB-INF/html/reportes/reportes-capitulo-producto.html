@@ -1,0 +1,178 @@
+<!DOCTYPE HTML>
+<html><head>
+<meta charset="utf-8">
+<title>:: Muro Tecnol&oacute;gico ::</title>
+<meta http-equiv="X-UA-Compatible" content="IE=8" />
+<link href="css/core.css" rel="stylesheet" type="text/css">
+
+<script src="js/URL_DD_roundies.js"></script>
+
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/grid.locale-es.js"></script>
+<script type="text/javascript" src="js/jquery.jqGrid.min.js" ></script>
+
+<!--<script type="text/javascript" src="js/jquery-1.3.2.js"></script>
+<script type="text/javascript" src="js/jquery.filestyle.pack.js" ></script>-->
+
+<!-- Select -->
+<script type="text/javascript" src="js/bootstrap-3.0.3.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-multiselect.js"></script>
+<script type="text/javascript" src="js/prettify.js"></script>
+<script type="text/javascript" src="js/jquery.filestyle.js"></script>
+
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<script type="text/javascript" src="js/inputs-styles.js"></script>
+
+</head>
+
+<body>
+
+<div id="container">
+
+	<!-- Header -->
+            <a class="activator" id="activator"></a>
+            
+                <!-- Grilla -->
+
+                <div class="overlay" id="overlay" style="display:none;">
+                	<div class="box" id="box">
+                    <a class="boxclose" id="boxclose"></a>
+                    	<div id="title-header-popup">Seleccionar Producto Cap&iacute;tulo</div>
+                        <form method="post" class="scrollbar">
+                            <ul id="body-popup">
+                                <li>Productos:</li>
+                                <li id="right-li">
+                                	<select class="select-box">
+                                        <option value="0486">--Seleccionar cpci&oacute;n--</option>
+                                        <option value="0320">0320 - Lur&iacute;n</option>
+                                        <option value="0567">0567 - C.C. Camino Real</option>
+                                        <option value="0998">0998 - Alcazar</option>
+                                        <option value="0877">0877 - Centro</option>
+                                    </select>
+                                </li>
+                                <li>Cap&iacute;tulos:</li>
+                              	<li id="right-li">
+                                	<!--<select class="select-box li-bottom-select">-->
+                                    <select class="select-box">
+                                        <option value="0486">--Seleccionar cpci&oacute;n--</option>
+                                        <option value="0320">0320 - Lur&iacute;n</option>
+                                        <option value="0567">0567 - C.C. Camino Real</option>
+                                        <option value="0998">0998 - Alcazar</option>
+                                        <option value="0877">0877 - Centro</option>
+                                    </select>
+                                </li>
+                                <li>Sub Cap&iacute;tulos:</li>
+                              	<li id="right-li">
+                                	<!--<select class="select-box li-bottom-select">-->
+                                    <select class="select-box">
+                                        <option value="0486">--Seleccionar cpci&oacute;n--</option>
+                                        <option value="0320">0320 - Lur&iacute;n</option>
+                                        <option value="0567">0567 - C.C. Camino Real</option>
+                                        <option value="0998">0998 - Alcazar</option>
+                                        <option value="0877">0877 - Centro</option>
+                                    </select>
+                                </li>
+                                <li>Rubros:</li>
+                              	<li id="right-li">
+                                	<!--<select class="select-box li-bottom-select">-->
+                                    <select class="select-box">
+                                        <option value="0486">--Seleccionar cpci&oacute;n--</option>
+                                        <option value="0320">0320 - Lur&iacute;n</option>
+                                        <option value="0567">0567 - C.C. Camino Real</option>
+                                        <option value="0998">0998 - Alcazar</option>
+                                        <option value="0877">0877 - Centro</option>
+                                    </select>
+                                </li>
+           						
+                                <style>
+									.container-export {
+										width:100%;
+										height:auto;
+										margin-bottom:10px;
+										float:left;
+										}
+									
+									.option-export {
+										width:309px;
+										height:35px;
+										background:#e2f4ff;
+										border:1px solid #bae0f5;
+										-webkit-border-radius:5px;
+										-moz-border-radius:5px;
+										border-radius:5px;
+										list-style:none;
+										margin:0 auto;
+										padding:0;
+										display:block;
+										}
+										
+									.option-export li {
+										font-family:"Stag Sans Light", Arial, sans-serif;
+										font-size:14px;
+										line-height:35px;
+										margin-left:33px;
+										float:left;
+										}
+										
+									.option-export li ing {
+										padding-top:-5px;
+										}		
+									
+								</style>
+                                <div class="container-export">
+                                	<ul class="option-export">
+                                    	<li><img src="images/EXCEL.png" />  Exportar Excel</li>
+                                        <li><img src="images/PDF.png" />  Exportar PDF</li>
+                                    </ul>
+								</div>
+                            </ul>
+                            
+                            <ul id="button-popup">
+                            	<li><input type="submit" value="Generar" class="button-image-complete-gren"></li>
+                            	<li><input type="button" value="Cancelar" class="button-image-complete" id="boxclose"><li>
+                            </ul>
+                        </form>
+                        
+                    </div>
+                </div>
+            <!-- Find Grilla -->
+            </div>
+
+                        
+            <script type="text/javascript">
+                $(function() {
+                    $('#activator').click(function(){
+                        $('#overlay').fadeIn('fast',function(){
+                            $('#box').animate({'top':'25%'},500);
+                        });
+                    });
+                    $('#boxclose').click(function(){
+                        $('#box').animate({'top':'25%'},500,function(){
+                            $('#overlay').fadeOut('fast');
+                        });
+                    });
+    
+                });
+            </script>
+            
+            <script type="text/javascript">
+			    $(document).ready(function() {
+			        window.prettyPrint() && prettyPrint();
+                    
+                    $('#oficinas').multiselect({
+                        includeSelectAllOption: true,
+			        	enableCaseInsensitiveFiltering: true
+                    });
+			    });
+			</script>
+            
+            	
+                
+                
+</div>
+</body>
+</html>

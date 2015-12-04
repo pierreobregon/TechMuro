@@ -1,0 +1,7 @@
+.loading_bar_body {
+  height: 100%;
+  width: 100%;
+  top:0;
+  left:0;
+  background: url(../images/ajax-loader-2.gif) no-repeat 50% 50%;
+}
