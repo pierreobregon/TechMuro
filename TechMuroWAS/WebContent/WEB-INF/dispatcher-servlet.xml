@@ -136,6 +136,9 @@
     <bean id="documentoDAO" class="pe.conadis.tradoc.dao.impl.DocumentoDaoImpl"></bean>
     <bean id="documentoManager" class="pe.conadis.tradoc.service.impl.DocumentoManagerImpl"></bean>
     
+    <bean id="incidenciaMensajeriaDAO" class="pe.conadis.tradoc.dao.impl.IncidenciaMensajeriaDaoImpl"></bean>
+    <bean id="mensajeriaManager" class="pe.conadis.tradoc.service.impl.MensajeriaManagerImpl"></bean>
+    
 <bean id="derivarDAO" class="pe.conadis.tradoc.dao.impl.DerivarDaoImpl"></bean>
     <bean id="derivarManager" class="pe.conadis.tradoc.service.impl.DerivarManagerImpl"></bean>
     

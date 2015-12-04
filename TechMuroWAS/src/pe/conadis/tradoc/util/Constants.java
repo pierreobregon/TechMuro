@@ -50,4 +50,8 @@ public class Constants {
 		public static final Integer ESTADO_ATENDIDO = 3;
 		public static final Integer ESTADO_ANULADO = 4;
 	}
+	public static class Estado{
+		public static final Character ESTADO_ACTIVO_CHAR = '1';
+		public static final Character ESTADO_INACTIVO_CHAR = '0';
+	}
 }

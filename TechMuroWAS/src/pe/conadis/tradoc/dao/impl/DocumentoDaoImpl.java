@@ -44,4 +44,17 @@ public class DocumentoDaoImpl extends AbstractDAO<Documento> implements Document
 		}
 	
 	}
+	
+	@SuppressWarnings("unchecked")
+	@Transactional
+	public List<Documento> obtenerDocumentosXEntidad(Documento documento)
+			throws Exception {
+		List<Documento> lstDocumento = new ArrayList<Documento>();
+		lstDocumento = (List<Documento>) this
+				.getSessionFactory()
+				.getCurrentSession()
+				.createQuery(
+						"from Documento d").list();
+		return lstDocumento;
+	}
 }
